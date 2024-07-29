@@ -5,18 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void StartGame()
-    {
-        SceneManager.LoadScene("GameScene");
-    }
+  public void StartGame()
+  {
+    SceneManager.LoadScene("GameScene");
+  }
 
-    public void OpenSettings()
-    {
-        SceneManager.LoadScene("Settings");
-    }
+  public void LoadGame()
+  {
+    Debug.Log("저장 미구현...");
+  }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
+  public void EndingCompilation()
+  {
+    SceneManager.LoadScene("EndingCompilation");
+  }
+
+  public void OpenSettings()
+  {
+    SceneManager.LoadScene("Settings");
+  }
+
+  public void QuitGame()
+  {
+    Application.Quit();
+  }
 }
