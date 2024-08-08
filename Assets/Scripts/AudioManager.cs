@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Music clip not found: " + name);
+            // Debug.LogWarning("Music clip not found: " + name);
         }
     }
 
@@ -70,7 +70,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // º¼·ý Á¶Àý
     public void SetMusicVolume(float volume)
     {
         musicSource.volume = volume;

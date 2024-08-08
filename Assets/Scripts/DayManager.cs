@@ -14,9 +14,19 @@ public class DayManager : MonoBehaviour
     private int originalFadePanelIndex;
     private int originalDayTextIndex;
 
+    private Moneymanager moneyManager;
+
     void Start()
     {
         UpdateDayText();
+
+         moneyManager = FindObjectOfType<Moneymanager>();
+
+        if (moneyManager == null)
+        {
+            Debug.LogError("MoneyManager not existing in scene.");
+            // return;
+        }
 
         originalFadePanelIndex = fadePanel.transform.GetSiblingIndex();
         originalDayTextIndex = dayText.transform.GetSiblingIndex();
@@ -30,18 +40,18 @@ public class DayManager : MonoBehaviour
 
     void UpdateDayText()
     {
-        dayText.text = currentDay + "ÀÏÂ÷";
+        dayText.text = currentDay + "ì¼ì°¨";
     }
 
     IEnumerator DayTransition()
     {
-        // ÆäÀÌµå ¾Æ¿ô
+        // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Æ¿ï¿½
         yield return StartCoroutine(FadeOut());
 
-        // ³¯Â¥ ¾÷µ¥ÀÌÆ®
+        // ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         UpdateDayText();
 
-        // ÅØ½ºÆ® Áß¾Ó¿¡ Ç¥½Ã
+        // ï¿½Ø½ï¿½Æ® ï¿½ß¾Ó¿ï¿½ Ç¥ï¿½ï¿½
         dayText.rectTransform.anchoredPosition = new Vector2(-3.0f, 0);
         dayText.rectTransform.pivot = new Vector2(0.5f, 0.5f);
         dayText.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
@@ -49,13 +59,13 @@ public class DayManager : MonoBehaviour
         dayText.transform.localScale = new Vector3(4, 4, 1);
         dayText.gameObject.SetActive(true);
 
-        // È¿°úÀ½ Àç»ı (È¿°úÀ½ ÆÄÀÏ Ãß°¡ ÇÊ¿ä)
+        // È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½Ê¿ï¿½)
         //AudioSource.PlayClipAtPoint(effectSound, transform.position);
 
-        // ÅØ½ºÆ® Áß¾Ó¿¡ 1ÃÊ°£ ´ë±â
+        // ï¿½Ø½ï¿½Æ® ï¿½ß¾Ó¿ï¿½ 1ï¿½Ê°ï¿½ ï¿½ï¿½ï¿½
         yield return new WaitForSeconds(2.0f);
 
-        // ÅØ½ºÆ® ÀÌµ¿
+        // ï¿½Ø½ï¿½Æ® ï¿½Ìµï¿½
         float duration = 2.0f;
         Vector2 startPosition = dayText.rectTransform.anchoredPosition;
         Vector2 endPosition = new Vector2(860, 500);
@@ -73,7 +83,10 @@ public class DayManager : MonoBehaviour
         dayText.rectTransform.anchoredPosition = endPosition;
         dayText.transform.localScale = endScale;
 
-        // ÆäÀÌµå ÀÎ
+
+        moneyManager.AddMoney(0);
+
+        // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½
         yield return StartCoroutine(FadeIn());
 
         //dayText.gameObject.SetActive(false);
@@ -88,7 +101,7 @@ public class DayManager : MonoBehaviour
             yield break;
         }
 
-        // fadePanel°ú dayText¸¦ ¸Ç À§·Î ÀÌµ¿
+        // fadePanelï¿½ï¿½ dayTextï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
         fadePanel.transform.SetAsLastSibling();
         dayText.transform.SetAsLastSibling();
 
@@ -124,7 +137,7 @@ public class DayManager : MonoBehaviour
         }
         canvasGroup.alpha = 0;
 
-        // ÆäÀÌµå ÀÎÀÌ ¿Ï·áµÇ¸é ¿ø·¡ À§Ä¡·Î µ¹¾Æ¿È
+        // ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½Æ¿ï¿½
         fadePanel.transform.SetSiblingIndex(originalFadePanelIndex);
         dayText.transform.SetSiblingIndex(originalDayTextIndex);
     }
