@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: b8fc7b65d120ae347ba719fe348342ab, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 9221235841407e646a1871bf120f6b49, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 946c50537e9ba864aabdb3c4ded94762, type: 3}
   m_SortingOrder: 0
 --- !u!114 &52191996
 MonoBehaviour:
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1b60392e8fc03044a8ab99c9cbda118, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93064f330b084544482be3a2d13e7be8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
