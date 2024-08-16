@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
   private Button _endingButton;
   private Button _loadButton;
 
+  private FadeInOut fadeInOut;
+
 	private void Awake()
 	{
 		_doc = GetComponent<UIDocument>();
@@ -28,11 +30,19 @@ public class GameManager : MonoBehaviour
     _settingsButton.clicked += SettingsButtonClicked;
     _endingButton.clicked   += EndingButtonClicked;
     _loadButton.clicked     += LoadButtonClicked;
+
+    fadeInOut = GameObject.Find("FadeOut Panel").GetComponent<FadeInOut>();
 	}
   private void StartButtonClicked()
   {
-    SceneManager.LoadScene("GameScene");
+    StartCoroutine(WaitAndExecute(1.5f));
   }
+  IEnumerator WaitAndExecute(float waitTime)
+  {
+    fadeInOut.StartFadeInOut();
+    yield return new WaitForSeconds(waitTime);
+		SceneManager.LoadScene("OpeningScene");
+	}
   private void QuitButtonClicked()
   {
     Application.Quit();
