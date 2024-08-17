@@ -9,6 +9,6 @@ public class RotateSettings : MonoBehaviour
     void Update()
     {
         // 매 프레임마다 아이콘을 회전시킵니다.
-        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+        // transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
 }
