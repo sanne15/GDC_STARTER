@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
   private Button _endingButton;
   private Button _loadButton;
 
-  private FadeInOut fadeInOut;
+  private FadeInScript _fadeInScript;
 
 	private void Awake()
 	{
@@ -31,17 +31,18 @@ public class GameManager : MonoBehaviour
     _endingButton.clicked   += EndingButtonClicked;
     _loadButton.clicked     += LoadButtonClicked;
 
-    fadeInOut = GameObject.Find("FadeOut Panel").GetComponent<FadeInOut>();
+    _fadeInScript = GameObject.Find("GoToOpeningScene Panel").GetComponent<FadeInScript>();
 	}
+
   private void StartButtonClicked()
   {
-    StartCoroutine(WaitAndExecute(1.5f));
+    _fadeInScript.StartFadeIn();
+    Invoke("GoToOpeningScene", _fadeInScript.fadeTime);
   }
-  IEnumerator WaitAndExecute(float waitTime)
+
+  private void GoToOpeningScene()
   {
-    fadeInOut.StartFadeInOut();
-    yield return new WaitForSeconds(waitTime);
-		SceneManager.LoadScene("OpeningScene");
+		SceneManager.LoadScene("Opening");
 	}
   private void QuitButtonClicked()
   {
