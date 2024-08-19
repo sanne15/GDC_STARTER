@@ -1,0 +1,7 @@
+MainCanvas : Default 3
+InteractCanvas : Default 7
+PanelCanvas : Default 10
+FadeCanvas : Default 100
+
+
+Sprites : Default 3

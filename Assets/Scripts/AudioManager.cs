@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
 
             musicDictionary = new Dictionary<string, AudioClip>();
             foreach (var clip in musicClips)

@@ -11,6 +11,8 @@ public class DayManager : MonoBehaviour
     public GameObject fadePanel;
     public GameObject panel; // sibling index confirmation
 
+    public CustomerManager customerManager;
+
     private int originalFadePanelIndex;
     private int originalDayTextIndex;
 
@@ -30,6 +32,13 @@ public class DayManager : MonoBehaviour
 
         originalFadePanelIndex = fadePanel.transform.GetSiblingIndex();
         originalDayTextIndex = dayText.transform.GetSiblingIndex();
+
+        StartDay();
+    }
+
+    void StartDay()
+    {
+        customerManager.InitializeDay(currentDay);
     }
 
     public void NextDay()
@@ -45,27 +54,26 @@ public class DayManager : MonoBehaviour
 
     IEnumerator DayTransition()
     {
-        // ���̵� �ƿ�
+        // Fadeout
         yield return StartCoroutine(FadeOut());
 
-        // ��¥ ������Ʈ
+        // Update Date
         UpdateDayText();
 
-        // �ؽ�Ʈ �߾ӿ� ǥ��
+        // SFX
+        //AudioSource.PlayClipAtPoint(effectSound, transform.position);
+
+        // Chuou
         dayText.rectTransform.anchoredPosition = new Vector2(-3.0f, 0);
         dayText.rectTransform.pivot = new Vector2(0.5f, 0.5f);
         dayText.rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
         dayText.rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
         dayText.transform.localScale = new Vector3(4, 4, 1);
         dayText.gameObject.SetActive(true);
-
-        // ȿ���� ��� (ȿ���� ���� �߰� �ʿ�)
-        //AudioSource.PlayClipAtPoint(effectSound, transform.position);
-
-        // �ؽ�Ʈ �߾ӿ� 1�ʰ� ���
+        
         yield return new WaitForSeconds(2.0f);
 
-        // �ؽ�Ʈ �̵�
+        // Text transition
         float duration = 2.0f;
         Vector2 startPosition = dayText.rectTransform.anchoredPosition;
         Vector2 endPosition = new Vector2(860, 500);
@@ -83,13 +91,13 @@ public class DayManager : MonoBehaviour
         dayText.rectTransform.anchoredPosition = endPosition;
         dayText.transform.localScale = endScale;
 
-
+        // money Added
         moneyManager.AddMoney(0);
 
-        // ���̵� ��
+        // Fadein
         yield return StartCoroutine(FadeIn());
 
-        //dayText.gameObject.SetActive(false);
+        StartDay();
     }
 
     IEnumerator FadeOut()
@@ -101,7 +109,7 @@ public class DayManager : MonoBehaviour
             yield break;
         }
 
-        // fadePanel�� dayText�� �� ���� �̵�
+        // fadePanel& dayText go to the first plane
         fadePanel.transform.SetAsLastSibling();
         dayText.transform.SetAsLastSibling();
 
@@ -137,7 +145,7 @@ public class DayManager : MonoBehaviour
         }
         canvasGroup.alpha = 0;
 
-        // ���̵� ���� �Ϸ�Ǹ� ���� ��ġ�� ���ƿ�
+        // Fade end >> return to appropriate plane
         fadePanel.transform.SetSiblingIndex(originalFadePanelIndex);
         dayText.transform.SetSiblingIndex(originalDayTextIndex);
     }
