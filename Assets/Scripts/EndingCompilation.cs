@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EndingCompilation : MonoBehaviour
 {
-	private UIDocument _doc;
+	public UIDocument _doc;
 
 	private Button _backButton;
 	private Button _ending1;
@@ -19,8 +19,6 @@ public class EndingCompilation : MonoBehaviour
 
 	private void Awake()
 	{
-		_doc = GetComponent<UIDocument>();
-
 		_backButton = _doc.rootVisualElement.Q<Button>("BackButton");
 		_ending1		= _doc.rootVisualElement.Q<Button>("EndingButton1");
 		_ending2		= _doc.rootVisualElement.Q<Button>("EndingButton2");

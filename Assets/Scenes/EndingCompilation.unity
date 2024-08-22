@@ -132,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 52191994}
   - component: {fileID: 52191995}
-  - component: {fileID: 52191996}
   m_Layer: 0
   m_Name: EndingCompilationUI
   m_TagString: Untagged
@@ -171,18 +170,6 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 946c50537e9ba864aabdb3c4ded94762, type: 3}
   m_SortingOrder: 0
---- !u!114 &52191996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 52191993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fafb4ee9e91580849b29210f9b6518ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &274160476
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fafb4ee9e91580849b29210f9b6518ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _doc: {fileID: 52191995}
 --- !u!4 &947634759
 Transform:
   m_ObjectHideFlags: 0

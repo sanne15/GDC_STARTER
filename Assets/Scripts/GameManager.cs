@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private UIDocument _doc;
+    public UIDocument _doc;
     private Button _startButton;
     private Button _quitButton;
     private Button _settingsButton;
@@ -16,8 +16,7 @@ public class GameManager : MonoBehaviour
     private FadeInScript _fadeInScript;
 
     private void Awake()
-    {	
-        _doc = GetComponent<UIDocument>();
+    {
         var root = _doc.rootVisualElement;
     
         if (root == null)
