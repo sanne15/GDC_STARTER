@@ -1,0 +1,57 @@
+.mainMenuButton {
+    height: 80px;
+    width: 200px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.startButton {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/start%20plain.png?fileID=2800000&guid=3a6eec94c6a3e8049a416ea134f8ccbe&type=3#start plain");
+}
+
+.startButton:hover {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/start%20painted.png?fileID=2800000&guid=ca124148cccb7e14aa6ddeefe9f36178&type=3#start painted");
+}
+
+.quitButton {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/quit%20plain.png?fileID=2800000&guid=9abece5a3fb0dbc4c9923a67b922b51c&type=3#quit plain");
+}
+
+.quitButton:hover {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/quit%20painted.png?fileID=2800000&guid=65da70e0e5840bc4cb2f914ad89a6935&type=3#quit painted");
+}
+
+.settingsButton {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/settings%20plain.png?fileID=2800000&guid=8e97a8c286e8f5541bc011bd731074db&type=3#settings plain");
+}
+
+.settingsButton:hover {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/settings%20painted.png?fileID=2800000&guid=d6bb2c998c052d24aa52f7e356cb33fb&type=3#settings painted");
+}
+
+.endingButton {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/ending%20plain.png?fileID=2800000&guid=3d4d35173f8a0744eafcb45ba7cf413d&type=3#ending plain");
+}
+
+.endingButton:hover {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/ending%20painted.png?fileID=2800000&guid=beaa6c1fc973967418c10190db62f6c4&type=3#ending painted");
+}
+
+.loadButton {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/load%20plain.png?fileID=2800000&guid=50e1c31509979aa4eb298a00f54bd243&type=3#load plain");
+}
+
+.loadButton:hover {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/load%20painted.png?fileID=2800000&guid=5a6090d44280792418b63b7fef480bbb&type=3#load painted");
+}

@@ -1,0 +1,67 @@
+.ending {
+    align-self: center;
+    width: auto;
+    height: auto;
+    flex-grow: initial;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.endingButton {
+    width: 400px;
+    height: 250px;
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/Tilte%20Background.png?fileID=2800000&guid=93064f330b084544482be3a2d13e7be8&type=3#Tilte Background");
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.endingButton:hover {
+    border-left-color: rgba(0, 31, 255, 0);
+    border-right-color: rgba(0, 31, 255, 0);
+    border-top-color: rgba(0, 31, 255, 0);
+    border-bottom-color: rgba(0, 31, 255, 0);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -unity-background-image-tint-color: rgb(155, 0, 0);
+}
+
+.endingLabel {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    -unity-text-align: middle-center;
+    width: 200px;
+    height: 80px;
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/paint.png?fileID=2800000&guid=92714218a663cf24eb30e49ef9510f84&type=3#paint");
+    -unity-font-style: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
