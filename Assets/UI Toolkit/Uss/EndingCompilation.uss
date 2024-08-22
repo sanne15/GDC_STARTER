@@ -1,18 +1,20 @@
 .ending {
     align-self: center;
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 90%;
     flex-grow: initial;
     align-items: center;
-    margin-top: 8px;
-    margin-right: 4px;
-    margin-bottom: 8px;
-    margin-left: 4px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
 }
 
 .endingButton {
-    width: 400px;
-    height: 250px;
     background-image: url("project://database/Assets/Images/MainMenu%20Images/Tilte%20Background.png?fileID=2800000&guid=93064f330b084544482be3a2d13e7be8&type=3#Tilte Background");
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
@@ -34,13 +36,14 @@
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+    height: 75%;
 }
 
 .endingButton:hover {
-    border-left-color: rgba(0, 31, 255, 0);
-    border-right-color: rgba(0, 31, 255, 0);
-    border-top-color: rgba(0, 31, 255, 0);
-    border-bottom-color: rgba(0, 31, 255, 0);
+    border-left-color: rgba(48, 48, 48, 0);
+    border-right-color: rgba(48, 48, 48, 0);
+    border-top-color: rgba(48, 48, 48, 0);
+    border-bottom-color: rgba(48, 48, 48, 0);
     border-top-width: 5px;
     border-right-width: 5px;
     border-bottom-width: 5px;
@@ -49,19 +52,27 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    -unity-background-image-tint-color: rgb(155, 0, 0);
+    -unity-background-image-tint-color: rgb(99, 99, 99);
 }
 
 .endingLabel {
     color: rgb(255, 255, 255);
     font-size: 30px;
     -unity-text-align: middle-center;
-    width: 200px;
-    height: 80px;
+    width: 30%;
+    height: 18%;
     background-image: url("project://database/Assets/Images/MainMenu%20Images/paint.png?fileID=2800000&guid=92714218a663cf24eb30e49ef9510f84&type=3#paint");
     -unity-font-style: bold;
     margin-bottom: 0;
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
+    -unity-font: url("project://database/Assets/TextMesh%20Pro/Fonts/KIMJUNGCHULMYUNGJO-REGULAR.TTF?fileID=12800000&guid=eafbf02a780c7af4aaee4b41df8add7d&type=3#KIMJUNGCHULMYUNGJO-REGULAR");
+}
+
+.backButton {
+}
+
+.backButton:hover {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/goBack%20painted.png?fileID=2800000&guid=1d805284237d13d408b99dd95b93d8f3&type=3#goBack painted");
 }
