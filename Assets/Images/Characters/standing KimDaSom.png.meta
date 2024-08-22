@@ -95,7 +95,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing KimDaSom_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 315
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a905d16c7ec86a41abe0d4912e9ff8a
+      internalID: 117214260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing KimDaSom_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 316
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d727c37af8b43a4caa184b708573e73
+      internalID: 682869949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +148,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing KimDaSom_0: 117214260
+      standing KimDaSom_1: 682869949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

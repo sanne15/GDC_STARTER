@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing LeeByeongDo_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4
+        width: 486
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503a9569fd34ee244acfdac51df71d10
+      internalID: 1761844331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing LeeByeongDo_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4
+        width: 484
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2e8ff9feaf9014ba13cf78db1c341e
+      internalID: -812054824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing LeeByeongDo_2
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 4
+        width: 483
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741d2e184cfcb014685d134dd39f36ab
+      internalID: 1160004332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing LeeByeongDo_3
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 4
+        width: 484
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8121ae775379f4aab70eae2dc03296
+      internalID: 363876412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing LeeByeongDo_4
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 4
+        width: 484
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16903fce3eb45c24e9d9c5fa26b4c2c3
+      internalID: 126671594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing LeeByeongDo_0: 1761844331
+      standing LeeByeongDo_1: -812054824
+      standing LeeByeongDo_2: 1160004332
+      standing LeeByeongDo_3: 363876412
+      standing LeeByeongDo_4: 126671594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

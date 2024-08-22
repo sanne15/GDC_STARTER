@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing SongEunJae_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 354
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacbc97a54ec18541a954d76f1e359e4
+      internalID: -292377173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongEunJae_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 0
+        width: 354
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba514c7b9f7ad134eb2299ade8caa48b
+      internalID: -2135749010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongEunJae_2
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 0
+        width: 354
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d9744214df8b846842f6de7c1dca7c
+      internalID: -81269503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongEunJae_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 354
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7d409b8a96245409bff39209233ba8
+      internalID: -1611634681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongEunJae_4
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 0
+        width: 354
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d10e98024917fa4fb36dd3e375ac90f
+      internalID: -1650901755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing SongEunJae_0: -292377173
+      standing SongEunJae_1: -2135749010
+      standing SongEunJae_2: -81269503
+      standing SongEunJae_3: -1611634681
+      standing SongEunJae_4: -1650901755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

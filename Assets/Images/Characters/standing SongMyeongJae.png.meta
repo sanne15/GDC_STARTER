@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing SongMyeongJae_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 439
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5908364646e0540924fc67d472a93c
+      internalID: 1955191481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongMyeongJae_1
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 0
+        width: 438
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00b27ad5a6023944855f5341f5614b5
+      internalID: 1218198601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongMyeongJae_2
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 439
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fa7f2202f1d6149b6cb635813433e0
+      internalID: -1025528053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongMyeongJae_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 439
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b82650eec58bb4b8f023f68c81235b
+      internalID: 1209437849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing SongMyeongJae_4
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 0
+        width: 439
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a764b87d4e45f454383c931f34aa42f3
+      internalID: 1016439674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing SongMyeongJae_0: 1955191481
+      standing SongMyeongJae_1: 1218198601
+      standing SongMyeongJae_2: -1025528053
+      standing SongMyeongJae_3: 1209437849
+      standing SongMyeongJae_4: 1016439674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

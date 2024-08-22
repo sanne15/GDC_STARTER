@@ -48,10 +48,11 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   expressionSpriteRenderer: {fileID: 3649968533980880911}
   expressionSprites:
-  - {fileID: -2035392178, guid: a0636697a7ac2314797f9f43b0561569, type: 3}
-  - {fileID: -878580891, guid: a0636697a7ac2314797f9f43b0561569, type: 3}
-  - {fileID: -429949875, guid: a0636697a7ac2314797f9f43b0561569, type: 3}
-  - {fileID: 525958658, guid: a0636697a7ac2314797f9f43b0561569, type: 3}
+  - {fileID: -1652086546, guid: 17d247d2a73d92b4da86f89eca8728d6, type: 3}
+  - {fileID: -938167520, guid: 17d247d2a73d92b4da86f89eca8728d6, type: 3}
+  - {fileID: 11647483, guid: 17d247d2a73d92b4da86f89eca8728d6, type: 3}
+  - {fileID: -169996565, guid: 17d247d2a73d92b4da86f89eca8728d6, type: 3}
+  - {fileID: 71205955, guid: 17d247d2a73d92b4da86f89eca8728d6, type: 3}
 --- !u!212 &3649968533980880911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93,7 +94,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -2035392178, guid: a0636697a7ac2314797f9f43b0561569, type: 3}
+  m_Sprite: {fileID: -1652086546, guid: 17d247d2a73d92b4da86f89eca8728d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

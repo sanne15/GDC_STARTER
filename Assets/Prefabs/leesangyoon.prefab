@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5138763877554796893}
   - component: {fileID: 3649968533980880911}
   m_Layer: 0
-  m_Name: E11
+  m_Name: leesangyoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,13 +48,12 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   expressionSpriteRenderer: {fileID: 3649968533980880911}
   expressionSprites:
-  - {fileID: 193286841, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
-  - {fileID: -1837929440, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
-  - {fileID: 1554585790, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
-  - {fileID: 591906400, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
-  - {fileID: 1838660071, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
-  - {fileID: -1425796163, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
-  - {fileID: 17626458, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
+  - {fileID: 1544564886, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
+  - {fileID: 1110509305, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
+  - {fileID: 628533374, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
+  - {fileID: -234464525, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
+  - {fileID: -621841684, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
+  - {fileID: -505696234, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
 --- !u!212 &3649968533980880911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 193286841, guid: 616e94f5cd7b4224a8384bd0b608c8c5, type: 3}
+  m_Sprite: {fileID: 1544564886, guid: 8a92a0aad6f711b40a7ec2b33a27bbc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -95,7 +95,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing E11_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 472
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fa86630e7efcb49bbd619ca6ffa12e
+      internalID: 193286841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing E11_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 0
+        width: 472
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0065d231196db3b4f97ae152a75ed4b7
+      internalID: -1837929440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing E11_2
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 0
+        width: 472
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea583f218b4b56b4fba88b1fb250aacc
+      internalID: 1554585790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing E11_3
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 0
+        width: 470
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90cd8432c2619b47b1756af61df7bcc
+      internalID: 591906400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing E11_4
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 0
+        width: 472
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6c237d0cba838439a3a0faac736098
+      internalID: 1838660071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing E11_5
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 0
+        width: 470
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9bf5610a2cbee41904991383860112
+      internalID: -1425796163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing E11_6
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 0
+        width: 470
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66693b01df2a187449b96e83d9f21e9c
+      internalID: 17626458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +253,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing E11_0: 193286841
+      standing E11_1: -1837929440
+      standing E11_2: 1554585790
+      standing E11_3: 591906400
+      standing E11_4: 1838660071
+      standing E11_5: -1425796163
+      standing E11_6: 17626458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

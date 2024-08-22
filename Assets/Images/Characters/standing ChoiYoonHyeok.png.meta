@@ -95,7 +95,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing ChoiYoonHyeok_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 492
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3830d94de7581ad4c8d27baa8469a4f0
+      internalID: 1349892669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing ChoiYoonHyeok_1
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 15
+        width: 491
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bfaaece20976b4d82fc462ad6cd487
+      internalID: 963898766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing ChoiYoonHyeok_2
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 15
+        width: 492
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1eb9ae27e5d1104d83f9614bcbccaaf
+      internalID: -855629653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing ChoiYoonHyeok_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 15
+        width: 492
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d4f55438130ee4f8eff27a58a375af
+      internalID: -476284236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing ChoiYoonHyeok_4
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 15
+        width: 491
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f325be40488cd24fa114432e2300e39
+      internalID: -605249957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing ChoiYoonHyeok_5
+      rect:
+        serializedVersion: 2
+        x: 2533
+        y: 15
+        width: 494
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bb18a6ab88d94428de7cfeee055c38
+      internalID: -1951795577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +232,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing ChoiYoonHyeok_0: 1349892669
+      standing ChoiYoonHyeok_1: 963898766
+      standing ChoiYoonHyeok_2: -855629653
+      standing ChoiYoonHyeok_3: -476284236
+      standing ChoiYoonHyeok_4: -605249957
+      standing ChoiYoonHyeok_5: -1951795577
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -48,12 +48,12 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   expressionSpriteRenderer: {fileID: 3649968533980880911}
   expressionSprites:
-  - {fileID: -2019510670, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
-  - {fileID: 1699491994, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
-  - {fileID: -1469878665, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
-  - {fileID: 1440734303, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
-  - {fileID: -1703033334, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
-  - {fileID: 1154862212, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
+  - {fileID: 760917812, guid: 66446587dcced5240979759286e789a6, type: 3}
+  - {fileID: -1010617632, guid: 66446587dcced5240979759286e789a6, type: 3}
+  - {fileID: 1336970691, guid: 66446587dcced5240979759286e789a6, type: 3}
+  - {fileID: -922657828, guid: 66446587dcced5240979759286e789a6, type: 3}
+  - {fileID: -573075917, guid: 66446587dcced5240979759286e789a6, type: 3}
+  - {fileID: -1622919263, guid: 66446587dcced5240979759286e789a6, type: 3}
 --- !u!212 &3649968533980880911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -2019510670, guid: f8af5b4ee4b367043aa364fba691b762, type: 3}
+  m_Sprite: {fileID: 760917812, guid: 66446587dcced5240979759286e789a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

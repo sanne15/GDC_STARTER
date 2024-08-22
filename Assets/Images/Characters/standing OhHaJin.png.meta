@@ -95,7 +95,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing OhHaJin_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 329
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1e2628c74432546853f0efaa3c6177
+      internalID: -1652086546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing OhHaJin_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 329
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a501ec2226ee37b44b3e81674996d0e0
+      internalID: -938167520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing OhHaJin_2
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 0
+        width: 329
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25d16e61a88918429b1731949ec5987
+      internalID: 11647483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing OhHaJin_3
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 329
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6649bf6a5e89a9d4ca52903ec6000dfe
+      internalID: -169996565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing OhHaJin_4
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 329
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacf18b94e6ef364b92cffdb2d7f7c97
+      internalID: 71205955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +211,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing OhHaJin_0: -1652086546
+      standing OhHaJin_1: -938167520
+      standing OhHaJin_2: 11647483
+      standing OhHaJin_3: -169996565
+      standing OhHaJin_4: 71205955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

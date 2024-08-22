@@ -939,6 +939,12 @@ MonoBehaviour:
   - {fileID: 889805751808790257, guid: aa33955ee1c719f4d996d99f15b7be08, type: 3}
   - {fileID: 889805751808790257, guid: 10bba14d1372f24449e46dc40e225540, type: 3}
   - {fileID: 889805751808790257, guid: 204ac764277406e4f87eef898f7ef55c, type: 3}
+  - {fileID: 889805751808790257, guid: 497ecd4bd25b2da4586e5224272f0d78, type: 3}
+  - {fileID: 889805751808790257, guid: 9451a95e67e70e74ca553645811f8bf7, type: 3}
+  - {fileID: 889805751808790257, guid: 0fc7edb1033dec34380a52ee6ee88dd8, type: 3}
+  - {fileID: 889805751808790257, guid: 476e65456fedf9d49bbdb00c6bba70c4, type: 3}
+  - {fileID: 889805751808790257, guid: 6b164a07ac6c1b148a16024684132ca3, type: 3}
+  - {fileID: 889805751808790257, guid: ad0d45286a9baaf4a949a04c47457ab5, type: 3}
   dialogueLoader: {fileID: 592040580}
   numberOfCustomers: 0
 --- !u!1 &221559091

@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: standing KimDongJin_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 463
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfa676694e5c984b929cd6dee33cd48
+      internalID: 978512438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing KimDongJin_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 15
+        width: 463
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b79d3c3babdc146b42b5e133b72c17
+      internalID: -1656177354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing KimDongJin_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 18
+        width: 463
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dd2104da31fca43a8a37559dbe4c55
+      internalID: 342450879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: standing KimDongJin_3
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 18
+        width: 463
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6314157e6d61fb44984f7e87f269c974
+      internalID: 1653656674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      standing KimDongJin_0: 978512438
+      standing KimDongJin_1: -1656177354
+      standing KimDongJin_2: 342450879
+      standing KimDongJin_3: 1653656674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
