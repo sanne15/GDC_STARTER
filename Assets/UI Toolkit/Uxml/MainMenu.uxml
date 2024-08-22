@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Uss/MainMenu.uss?fileID=7433441132597879392&amp;guid=82329df9862310e428c5c25862d486d9&amp;type=3#MainMenu" />
-    <ui:VisualElement name="Container" style="flex-grow: 1; width: 500px; padding-right: 96px; padding-bottom: 150px; padding-left: 72px; padding-top: 110px;">
-        <ui:VisualElement name="TitleLogo" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/Images/MainMenu%20Images/Tiltle%20Logo.png?fileID=2800000&amp;guid=1374e169c2ee9cd47906abd5e03a0ad2&amp;type=3#Tiltle Logo&quot;); height: 175px; margin-bottom: 60px;" />
-        <ui:VisualElement name="Buttons" style="flex-grow: 1; justify-content: space-between; align-items: center; padding-bottom: 0;">
+    <ui:VisualElement name="Container" style="flex-grow: 1; width: 35%; padding-right: 0; padding-bottom: 0; padding-left: 0; padding-top: 2%;">
+        <ui:VisualElement name="TitleLogo" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/Images/MainMenu%20Images/Title%20Logo.png?fileID=2800000&amp;guid=7636afaec9cdf5040b5745a2197bade0&amp;type=3#Title Logo&quot;); height: 40%; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0; width: 100%;" />
+        <ui:VisualElement name="Buttons" style="flex-grow: 1; justify-content: space-between; align-items: center; padding-bottom: 15%; padding-right: 32%; padding-left: 32%;">
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartButton" class="mainMenuButton startButton" />
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuitButton" class="mainMenuButton quitButton" />
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="mainMenuButton settingsButton" />

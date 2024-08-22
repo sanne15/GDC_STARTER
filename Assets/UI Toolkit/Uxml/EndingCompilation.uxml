@@ -1,33 +1,33 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Uss/EndingCompilation.uss?fileID=7433441132597879392&amp;guid=52b92cb1101192646abb62ff023df5c4&amp;type=3#EndingCompilation" />
     <ui:VisualElement name="Row1" style="flex-grow: 1; flex-direction: row;">
-        <ui:VisualElement name="BackButtonContainer" style="flex-grow: initial; width: 150px; padding-top: 25px; padding-left: 25px;">
-            <ui:Button text="Go Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" style="width: 100px; height: 100px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:VisualElement name="BackButtonContainer" style="flex-grow: initial; width: 13%; padding-top: 1.5%; padding-left: 1.5%; padding-right: 1.5%; padding-bottom: 1.5%;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="backButton" style="width: 100%; height: 17%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(188, 188, 188, 0); background-image: url(&quot;project://database/Assets/Images/MainMenu%20Images/goBack%20plain.png?fileID=2800000&amp;guid=5b6ed0d2778b69d42bfe14d1808d9b27&amp;type=3#goBack plain&quot;); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
         </ui:VisualElement>
-        <ui:VisualElement name="EndingContainer" style="flex-grow: 1; flex-direction: row; justify-content: center; padding-right: 150px; align-self: flex-end;">
+        <ui:VisualElement name="EndingContainer" style="flex-grow: 1; flex-direction: row; justify-content: space-between; padding-right: 0; align-self: flex-end; padding-top: 0; padding-bottom: 0; padding-left: 0; margin-right: 13%; height: 100%; align-items: stretch;">
             <ui:VisualElement name="Ending1" class="ending">
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton1" class="endingButton" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton1" class="endingButton" style="background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END1.png?fileID=2800000&amp;guid=6f1e5fc2821e6674a89637c9a33231a5&amp;type=3#END1&quot;); width: 70%; height: 70%;" />
                 <ui:Label tabindex="-1" text="Ending1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel1" class="endingLabel" />
             </ui:VisualElement>
             <ui:VisualElement name="Ending2" class="ending">
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton2" class="endingButton" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton2" class="endingButton" style="background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END2.png?fileID=2800000&amp;guid=fb629213f92006d41acf64929c97c0fc&amp;type=3#END2&quot;); width: 70%; height: 70%;" />
                 <ui:Label tabindex="-1" text="Ending2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel2" class="endingLabel" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="Row2" style="flex-grow: 1; flex-direction: row;">
-        <ui:VisualElement name="EndingConatiner" style="flex-grow: 1; flex-direction: row; justify-content: center; align-self: flex-start;">
+        <ui:VisualElement name="EndingConatiner" style="flex-grow: 1; flex-direction: row; justify-content: center; align-self: flex-start; margin-right: 5%; margin-left: 5%; height: 100%; align-items: stretch;">
             <ui:VisualElement name="Ending3" class="ending">
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton3" class="endingButton" />
-                <ui:Label tabindex="-1" text="Ending3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel3" class="endingLabel" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton3" class="endingButton" style="background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END3.png?fileID=2800000&amp;guid=7b0c342b0593d7d42bda84f370b73dd3&amp;type=3#END3&quot;); width: 85%; height: 65%;" />
+                <ui:Label tabindex="-1" text="Ending3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel3" class="endingLabel" style="width: 37%;" />
             </ui:VisualElement>
             <ui:VisualElement name="Ending4" class="ending">
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton4" class="endingButton" />
-                <ui:Label tabindex="-1" text="Ending4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel4" class="endingLabel" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton4" class="endingButton" style="background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END4.png?fileID=2800000&amp;guid=0ebc13101c96fe547832e5be2af098f3&amp;type=3#END4&quot;); width: 85%; height: 65%;" />
+                <ui:Label tabindex="-1" text="Ending4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel4" class="endingLabel" style="width: 37%;" />
             </ui:VisualElement>
             <ui:VisualElement name="Ending5" class="ending">
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton5" class="endingButton" />
-                <ui:Label tabindex="-1" text="Ending5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel5" class="endingLabel" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton5" class="endingButton" style="width: 85%; height: 65%;" />
+                <ui:Label tabindex="-1" text="Ending5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel5" class="endingLabel" style="width: 37%;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

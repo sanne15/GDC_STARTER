@@ -1,6 +1,6 @@
 .mainMenuButton {
-    height: 80px;
-    width: 200px;
+    height: 18%;
+    width: 100%;
     border-left-color: rgba(0, 0, 0, 0);
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
