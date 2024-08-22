@@ -1,0 +1,266 @@
+{
+    "day": 2,
+    "storyNPCs": [
+        {
+            "name": "ohhajin",
+            "dialogue": {
+                "characterName": "오하진",
+                "sentences": [
+                    {
+                        "text": "아저씨. 안녕하세요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "오랜만에 오셨네요. 꼬마 아가씨가 이 시간에 무슨 일이신가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아. 꼬마 아니에요. 벌써 고등학생이라고요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "아 참. 실례했네요. 나이를 먹으니까 둔감해져서요.. 하하",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "저도 나이를 먹으면 괜찮아질까요..",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "세상에 좋은 것만 있지는 않아요. 나이를 먹으면 둔감해지지만 그건 장점이자 단점이니까요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 사실은 오늘 시험을 망쳤거든요. 집에 들어가기 싫어서요. 여기 오면 마음이 편해진다고 하길래요.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "그런 말이 오고 간다니 감사하네요. 저는 그저 이야기를 들어줄 뿐이에요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그것만으로도 감사하죠. 저희 부모님은 그래주시지 않는 걸요. 시험이 세상의 전부일까요…",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "제가 공부가 중요하지 않다고 해도 공감하실 수 없을거예요. 저는 지금 당신의 처지가 아니니까요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "시험은 정말 중요하지만, 너무 무리하지는 마요. 세상에는 더 중요한 것이 많으니까요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "맞는 말이네요. 주변 사람들이 공부 중요하지 않다고 해도 아득바득 공부해왔으니까요. 저는 사실 제 자신에게 실망한 걸지도 모르죠.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "그런가요..하하. 저도 주인장처럼 나이를 먹으면 그렇게 생각할 수 있을까요?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그럼에도 쓰러지지 않았잖아요. 그런 자신이 대견하지는 않나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그럴지도 모르지만, 저는 이미 손님이 대단하다고 생각해요. 손님은 그렇게 생각해본적 없나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그런 생각은 안해봤네요…",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "시도만으로도 당신은 칭찬받을 사람이에요. 원래 인간은 자신이 가지고 있는건 낮게 생각하고 가지지 못한것을 크게 생각하니까요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "…",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그러니까 힘내요. 세상은 게임같은게 아니에요. 한번 실패한다고 끝나는게 아니에요. 실패를 두려워하지마요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아저씨는 참 멋진 분이네요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "나이를 먹으니까 궤변을 장황하게 이야기하는 버릇만 생겨서요. 하하",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아니에요 아저씨. 큰 힘이 됐어요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "(아무것도 하지 않는다)",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "(돈 1만원을 주며) 가서 친구들이랑 간식이라도 사먹어요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "다음에 봬요!",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "어..? 아니에요! 괜찮아요..",
+                        "speaker": 0,
+                        "emotion": "surprised"
+                    },
+                    {
+                        "text": "제 성의니까 받아요. 팔 떨어지겠어요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "…감사합니다.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "잘 가요. 또 오세요!",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "D02",
+            "dialogue": {
+                "characterName": "D02",
+                "sentences": [
+                    {
+                        "text": "오랜만이에요. 주인 아저씨.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "오랜만이네요. 요즘 어떻게 지냈어요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "말도 마세요. 얼마나 바쁜걸요. 아저씨야 말로 괜찮아요? 인간들 상락시에서 전부 쫒아낸다고 말이 많던데.",
+                        "speaker": 0,
+                        "emotion": "exhausted"
+                    },
+                    {
+                        "text": "제가 하라고 할 사람인가요? 일단 될 수 있는 대까지는 버텨보기로 했어요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "역시 주인 아저씨. 제 스승님 하실래요?",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "괜찮습니다.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "장난이에요. 오늘은 잠이 안와서 오랜만에 왔어요. 오랜만에 와도 똑같네요. 이 가게는",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "무슨 일 있으셨나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아뇨. 별건 아니고… 그냥 직장 상사한테 혼났어요. 일 좀 똑바로 하라고요.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "남에게 혼나는 것 만큼 속이 상하는 일도 없는데…",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "뭐. 그렇죠. 근데 제가 생각해도 제가 잘못했어요. 그럼에도 속상하다니. 신기하지 않아요?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그렇게 생각해본적은 없지만.. 예전에 부모님한테 혼나고 부모님이 미웠던 기억은 있죠. 제 잘못인데 말이에요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "뭐.. 제가 잘못한 거니까 남이 아니라, 저에게 화가 났던 것 같아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 인간이나 로봇이나. 똑같네요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "오.. 그렇게 듣고 보니까 저도 그런걸지도 모르겠네요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그래도 다른 사람들 앞에서 혼내는 건 잘못된 거 같아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "다른 사람 앞에서요? 따로 불러서 혼내셨어요. 저는 그런 말 한 적 없는걸요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아. 그러게요. 죄송해요 당연하게 그렇게 생각해버렸네요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 저도 가끔 그래요. 시간이 늦었네요. 다음에 또 올께요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "아. 다음에 또 오세요. 잘 들어가요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        }
+    ]
+}

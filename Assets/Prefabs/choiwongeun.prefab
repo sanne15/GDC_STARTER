@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5138763877554796893}
   - component: {fileID: 3649968533980880911}
   m_Layer: 0
-  m_Name: D02
+  m_Name: choiwongeun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,29 +48,32 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   expressionSpriteRenderer: {fileID: 3649968533980880911}
   expressionSprites:
-  - {fileID: 2132205516, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
-  - {fileID: 1974260777, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
-  - {fileID: -315170632, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
-  - {fileID: -318851112, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
+  - {fileID: -626553273, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
+  - {fileID: -1451034190, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
+  - {fileID: -1341760260, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
+  - {fileID: -81330337, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
+  - {fileID: 1469255890, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
+  - {fileID: -933240572, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
+  - {fileID: 599418432, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
   emotionSpriteMappings:
   - emotion: 0
     spriteIndex: 0
   - emotion: 1
-    spriteIndex: 1
+    spriteIndex: 3
   - emotion: 2
-    spriteIndex: 2
+    spriteIndex: 4
   - emotion: 3
-    spriteIndex: 3
+    spriteIndex: 2
   - emotion: 4
-    spriteIndex: 3
-  - emotion: 5
-    spriteIndex: 2
-  - emotion: 6
-    spriteIndex: 2
-  - emotion: 7
-    spriteIndex: 3
-  - emotion: 8
     spriteIndex: 1
+  - emotion: 5
+    spriteIndex: 1
+  - emotion: 6
+    spriteIndex: 5
+  - emotion: 7
+    spriteIndex: 6
+  - emotion: 8
+    spriteIndex: 3
 --- !u!212 &3649968533980880911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112,7 +115,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 2132205516, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
+  m_Sprite: {fileID: -626553273, guid: 661b51f9f8ed1f649a5a89c0a7c98be2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

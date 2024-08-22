@@ -8,6 +8,44 @@ public class Customer : MonoBehaviour
     public SpriteRenderer expressionSpriteRenderer; // 표정 등을 위한 SpriteRenderer
     public Sprite[] expressionSprites; // 표정이나 추가 요소에 사용할 스프라이트 배열
 
+    public enum Emotion
+    {
+        neutral,
+        delight,
+        angry,
+        exhausted,
+        sad,
+        bored,
+        frightened,
+        despair,
+        laughter
+        // 필요한 다른 감정들 추가
+    }
+
+    public Dictionary<Emotion, int> emotionToSpriteIndex;
+
+    // Unity Editor에서 Dictionary를 설정할 수 있도록 Serializable 클래스 정의
+    [System.Serializable]
+    public class EmotionSpriteMapping
+    {
+        public Emotion emotion;
+        public int spriteIndex; // 해당 감정에 매핑된 스프라이트 인덱스
+    }
+
+    public EmotionSpriteMapping[] emotionSpriteMappings;
+
+    void Awake()
+    {
+        // Dictionary 초기화 및 EmotionSpriteMapping 배열 기반으로 채우기
+        emotionToSpriteIndex = new Dictionary<Emotion, int>();
+        foreach (var mapping in emotionSpriteMappings)
+        {
+            if (!emotionToSpriteIndex.ContainsKey(mapping.emotion))
+            {
+                emotionToSpriteIndex.Add(mapping.emotion, mapping.spriteIndex);
+            }
+        }
+    }
 
     void Start()
     {
@@ -20,7 +58,15 @@ public class Customer : MonoBehaviour
             // Debug.LogWarning("Dialogue is not assigned on start. Please check the assignment.");
             dialogue = ScriptableObject.CreateInstance<Dialogue>();
             dialogue.characterName = "Default";
-            dialogue.sentences = new string[] { "No dialogue available." };
+            dialogue.sentences = new List<SentenceData>
+            {
+                new SentenceData
+                {
+                    text = "No dialogue available.",
+                    speaker = 0, // 기본값으로 상대방이 발화자로 설정
+                    emotion = "neutral" // 기본 감정 설정
+                }
+            };
         }
     }
 
@@ -129,13 +175,40 @@ public class Customer : MonoBehaviour
         transform.position = endPosition;
     }
 
-    public void ChangeExpression(int index)
+    public void ChangeExpression(string emotion)
     {
-        if (index >= 0 && index < expressionSprites.Length)
+        if (expressionSprites == null || expressionSprites.Length == 0)
         {
-            expressionSpriteRenderer.sprite = expressionSprites[index];
+            Debug.LogWarning("No expression sprites assigned to this customer.");
+            return;
+        }
+
+        // 입력된 emotion을 enum으로 변환 시도
+        if (System.Enum.TryParse(emotion, true, out Emotion parsedEmotion))
+        {
+            // emotionToSpriteIndex에서 해당 감정의 인덱스를 가져옴
+            if (emotionToSpriteIndex.TryGetValue(parsedEmotion, out int expressionIndex))
+            {
+                if (expressionIndex >= 0 && expressionIndex < expressionSprites.Length)
+                {
+                    expressionSpriteRenderer.sprite = expressionSprites[expressionIndex];
+                }
+                else
+                {
+                    Debug.LogWarning($"Sprite index for emotion '{emotion}' is out of bounds for this customer.");
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"Emotion '{emotion}' not mapped to a sprite for this customer.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"Emotion '{emotion}' could not be parsed to an enum.");
         }
     }
+
 
     void SetAlpha(float alpha)
     {

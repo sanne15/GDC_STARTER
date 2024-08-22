@@ -54,6 +54,25 @@ MonoBehaviour:
   - {fileID: -922657828, guid: 66446587dcced5240979759286e789a6, type: 3}
   - {fileID: -573075917, guid: 66446587dcced5240979759286e789a6, type: 3}
   - {fileID: -1622919263, guid: 66446587dcced5240979759286e789a6, type: 3}
+  emotionSpriteMappings:
+  - emotion: 0
+    spriteIndex: 0
+  - emotion: 1
+    spriteIndex: 2
+  - emotion: 2
+    spriteIndex: 3
+  - emotion: 3
+    spriteIndex: 5
+  - emotion: 4
+    spriteIndex: 3
+  - emotion: 5
+    spriteIndex: 3
+  - emotion: 6
+    spriteIndex: 1
+  - emotion: 7
+    spriteIndex: 5
+  - emotion: 8
+    spriteIndex: 2
 --- !u!212 &3649968533980880911
 SpriteRenderer:
   m_ObjectHideFlags: 0

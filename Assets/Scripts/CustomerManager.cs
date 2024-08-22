@@ -12,6 +12,8 @@ public class CustomerManager : MonoBehaviour
     public Queue<Customer> customerQueue;
     private List<Customer> currentCustomers = new List<Customer>();
 
+    private Customer nextCustomer;
+
     void Start()
     {
         // CustomerPrefabs가 비어 있으면 오류 메시지 출력
@@ -34,7 +36,11 @@ public class CustomerManager : MonoBehaviour
     {
         if (customerQueue.Count > 0)
         {
-            Customer nextCustomer = customerQueue.Dequeue();
+            nextCustomer = customerQueue.Dequeue();
+            if (dialogueManager != null)
+            {
+                dialogueManager.currentCustomer = nextCustomer;
+            }
             nextCustomer.EnterShop(() => StartDialogue(nextCustomer));
         }
         else
@@ -64,6 +70,25 @@ public class CustomerManager : MonoBehaviour
         return numberOfCustomers;
     }
 
+    // 현재 대화 중인 캐릭터를 강제 퇴장시키는 메서드
+    public void ForceExitCurrentCustomer()
+    {
+        if (nextCustomer != null)
+        {
+            StartCoroutine(ForceExitAndStartNextCustomer());
+        }
+    }
+
+    private IEnumerator ForceExitAndStartNextCustomer()
+    {
+        yield return StartCoroutine(nextCustomer.ExitShop(Random.value > 0.5f));
+
+        nextCustomer = null; // currentCustomer를 null로 설정하여 퇴장 처리 완료
+
+        // 다음 손님을 불러옴
+        StartNextCustomer();
+    }
+
     List<Customer> GenerateCustomersForDay(int day)
     {
         List<Customer> customers = new List<Customer>();
@@ -84,18 +109,18 @@ public class CustomerManager : MonoBehaviour
                 if (dialogue != null)
                 {
                     customer.dialogue = dialogue;
-                    // Debug.Log($"Assigned dialogue for {npcName}: {dialogue.characterName}");
+                    Debug.Log($"Assigned dialogue for {npcName}: {dialogue.characterName}");
                 }
                 else
                 {
-                    // Debug.LogError($"Dialogue for {npcName} is null.");
+                    Debug.LogError($"Dialogue for {npcName} is null.");
                 }
 
                 customers.Add(customer);
             }
             else
             {
-                // Debug.LogError($"Prefab for {npcName} not found.");
+                Debug.LogError($"Prefab for {npcName} not found.");
             }
         }
 
@@ -140,14 +165,23 @@ public class CustomerManager : MonoBehaviour
             "오늘 장사는 어떤가?",
             "라면 좀 주실 수 있소 주인장?",
             "날씨가 좋구려.",
-            "오늘의 특선 메뉴 있소?"
+            "오늘의 특선 메뉴 있소?",
+            "하하, 라면은 역시 짜고 매워야지 안그래?"
         };
 
         int sentenceCount = Random.Range(3, 6); // 3~5개의 대사 생성
-        dialogue.sentences = new string[sentenceCount];
+        dialogue.sentences = new List<SentenceData>(); // 새로운 List<SentenceData>로 초기화
+
         for (int i = 0; i < sentenceCount; i++)
         {
-            dialogue.sentences[i] = possibleSentences[Random.Range(0, possibleSentences.Length)];
+            SentenceData newSentence = new SentenceData
+            {
+                text = possibleSentences[Random.Range(0, possibleSentences.Length)], // 랜덤 대사 선택
+                speaker = 0, // 기본 발화자 설정 (필요에 따라 0 또는 1로 설정 가능)
+                emotion = "neutral" // 기본 감정 설정 (필요에 따라 다른 감정으로 설정 가능)
+            };
+
+            dialogue.sentences.Add(newSentence); // 리스트에 추가
         }
 
         return dialogue;

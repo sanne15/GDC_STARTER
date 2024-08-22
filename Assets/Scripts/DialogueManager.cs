@@ -15,22 +15,29 @@ public class DialogueManager : MonoBehaviour
     public ARPanelController arPanelController; // ARPanelController를 참조
 
     public TextMeshProUGUI fastForwardText; // "빨리감기" 버튼의 TextMeshProUGUI 참조
-    public Color normalColor;
+    public TextMeshProUGUI LogText; // "대화로그" 버튼의 TextMeshProUGUI 참조
+    public Color normalColor = new Color(0.3f, 0.3f, 0.3f, 1f);
     public Color activeColor = Color.white;
     public float colorTransitionDuration = 0.1f;
 
-    private Queue<string> sentences;
+    private Queue<SentenceData> sentences;
     private bool canProceed; // 다음 문장으로 진행할 수 있는지 여부를 나타냄
 
     private System.Action onDialogueComplete; // Conversation Ending Callback
+    private bool Colorcount = false;
 
     private ControlManager controlManager;
     private bool isColorTransitioning = false;
+    private bool isColorTransitioning2 = false;
+
+    private string character_name_dialogue;
+
+    public Customer currentCustomer;
 
 
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<SentenceData>();
         canProceed = false;
         bubbleCanvasGroup.alpha = 0; // 초기에는 말풍선을 투명하게 설정
 
@@ -41,6 +48,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue, System.Action onComplete)
     {
         nameText.text = dialogue.characterName;
+        character_name_dialogue = nameText.text;
         sentences.Clear();
 
         StartCoroutine(StartDialogueWithFadeIn(dialogue, onComplete)); // 대화 시작 시 말풍선 페이드 인
@@ -74,6 +82,14 @@ public class DialogueManager : MonoBehaviour
                 StartCoroutine(ChangeTextColor(normalColor));
             }
         }
+
+        if (controlManager.isLPressed)
+        {
+            if (!isColorTransitioning2)
+            {
+                StartCoroutine(ChangeTextColor2());
+            }
+        }
     }
 
     public void DisplayNextSentence()
@@ -94,18 +110,35 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        SentenceData sentenceData = sentences.Dequeue();
         // StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(sentenceData));
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(SentenceData sentence)
     {
+
+        if (sentence == null || string.IsNullOrEmpty(sentence.text))
+        {
+            Debug.LogError("SentenceData or its text is null or empty.");
+            yield break;
+        }
+
         dialogueText.text = "";
         canProceed = false; // 타이핑 중에는 진행할 수 없도록 설정
         float typingSpeed = 0.05f; // 각 글자 사이의 지연 시간 (초 단위)
 
-        foreach (char letter in sentence.ToCharArray())
+        if (sentence.speaker == 0)
+        {
+            nameText.text = character_name_dialogue;
+            currentCustomer.ChangeExpression(sentence.emotion);
+        }
+        else
+        {
+            nameText.text = "주인장";
+        }
+
+        foreach (char letter in sentence.text.ToCharArray())
         {
             dialogueText.text += letter;
             AdjustBubbleSize();
@@ -154,7 +187,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator StartDialogueWithFadeIn(Dialogue dialogue, System.Action onComplete)
     {
-        foreach (string sentence in dialogue.sentences)
+        foreach(SentenceData sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -227,6 +260,36 @@ public class DialogueManager : MonoBehaviour
 
         fastForwardText.fontMaterial.SetColor("_FaceColor", targetColor);
         isColorTransitioning = false;
+    }
+
+    IEnumerator ChangeTextColor2()
+    {
+        Color targetColor;
+        isColorTransitioning2 = true;
+        Colorcount = !Colorcount;
+
+        if (Colorcount)
+        {
+            targetColor = activeColor;
+        }
+        else
+        {
+            targetColor = normalColor;
+        }
+
+        Color currentColor = LogText.fontMaterial.GetColor("_FaceColor");
+        float elapsed = 0f;
+
+        while (elapsed < colorTransitionDuration)
+        {
+            Color newColor = Color.Lerp(currentColor, targetColor, elapsed / colorTransitionDuration);
+            LogText.fontMaterial.SetColor("_FaceColor", newColor);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        LogText.fontMaterial.SetColor("_FaceColor", targetColor);
+        isColorTransitioning2 = false;
     }
 }
 

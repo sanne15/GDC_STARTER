@@ -19,7 +19,15 @@ public class StoryNPCData
 public class DialogueData
 {
     public string characterName;
-    public string[] sentences;
+    public List<SentenceData> sentences;
+}
+
+[System.Serializable]
+public class SentenceData
+{
+    public string text;
+    public int speaker;  // 0: 상대방, 1: 플레이어
+    public string emotion;
 }
 
 public class DialogueLoader : MonoBehaviour
@@ -50,16 +58,26 @@ public class DialogueLoader : MonoBehaviour
             {
                 Dialogue newDialogue = ScriptableObject.CreateInstance<Dialogue>();
                 newDialogue.characterName = npcData.dialogue.characterName;
-                newDialogue.sentences = npcData.dialogue.sentences;
+
+                foreach (var sentence in npcData.dialogue.sentences)
+                {
+                    SentenceData newSentence = new SentenceData
+                    {
+                        text = sentence.text,
+                        speaker = sentence.speaker,
+                        emotion = sentence.emotion
+                    };
+                    newDialogue.sentences.Add(newSentence);
+                }
 
                 storyNPCDialogues[npcData.name] = newDialogue;
                 storyNPCNames.Add(npcData.name);
             }
-            // Debug.Log($"Loaded {storyNPCNames.Count} Story NPCs for day {day}");
+            Debug.Log($"Loaded {storyNPCNames.Count} Story NPCs for day {day}");
         }
         else
         {
-            // Debug.LogError("Failed to parse DialogueDatabase from JSON.");
+            Debug.LogError("Failed to parse DialogueDatabase from JSON.");
         }
     }
 

@@ -7,7 +7,10 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     public string characterName;
+    public List<SentenceData> sentences;
 
-    [TextArea(3, 10)]
-    public string[] sentences;
+    void OnEnable()
+    {
+        sentences = new List<SentenceData>();
+    }
 }

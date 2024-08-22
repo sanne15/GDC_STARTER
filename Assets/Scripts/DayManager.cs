@@ -120,6 +120,8 @@ public class DayManager : MonoBehaviour
         // Fadein
         yield return StartCoroutine(FadeIn());
 
+        currentState = GameState.Dialogue;
+
         StartDay();
     }
 
@@ -132,15 +134,15 @@ public class DayManager : MonoBehaviour
         // 손님 수 계산
         int customersToday = customerManager.GetCustomersToday();
         int earnings = customersToday * 500;
-        int penalty = 0;  // 벌금 계산 로직이 필요함
-        int netEarnings = earnings - penalty;
+        int penalty = 270000;  // 벌금 계산 로직이 필요함
+        int netEarnings = earnings;
 
         earningsText.text = $"Earnings: {earnings}₩";
-        penaltyText.text = $"Penalty: {penalty}₩";
-        netEarningsText.text = $"Net Earnings: {netEarnings}₩";
+        penaltyText.text = $"이번주의 벌금: {penalty}₩";
+        netEarningsText.text = $"Cash: {netEarnings + moneyManager.GetMoney()}₩";
 
         // money Added
-        moneyManager.AddMoney(earnings);
+        moneyManager.AddMoney(netEarnings);
     }
 
     public void OnNextDayButtonClicked()
