@@ -6,15 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TeamLogo.unity
+    guid: 90c0ca6ed51985c4ba9d0d4f6080b24f
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: caeeee3ecc0c58446b1707b26ac53c41
   - enabled: 1
     path: Assets/Scenes/EndingCompilation.unity
     guid: 7e9ecf9283abb5a488984bafdd8721e9
   - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 57b9f6ac3e8aa064bb9ba5f9036cd57c
+  - enabled: 1
+    path: Assets/Scenes/Opening.unity
+    guid: fd02b0fa78bd21e469ef8bf9ba77288f
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 22d618ae84d59f048a045e759f011661
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
-    guid: 57b9f6ac3e8aa064bb9ba5f9036cd57c
+    path: Assets/Scenes/Ending1.unity
+    guid: 615f4905be23aa44e93154c45d84ea54
+  - enabled: 1
+    path: Assets/Scenes/Ending2.unity
+    guid: e722c3bc175e7b94391812337099cf60
+  - enabled: 1
+    path: Assets/Scenes/Ending3.unity
+    guid: e196ca5c52a4dd044aa6393829232e31
+  - enabled: 1
+    path: Assets/Scenes/Ending4.unity
+    guid: 432652d7363554a49ad78b99108702b9
+  - enabled: 1
+    path: Assets/Scenes/Ending5.unity
+    guid: 7f5e5b6e24b0983408eb0d0410b88ce2
   m_configObjects: {}

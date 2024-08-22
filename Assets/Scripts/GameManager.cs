@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
   private Button _endingButton;
   private Button _loadButton;
 
+  private FadeInScript _fadeInScript;
+
 	private void Awake()
 	{
 		_doc = GetComponent<UIDocument>();
@@ -28,11 +30,20 @@ public class GameManager : MonoBehaviour
     _settingsButton.clicked += SettingsButtonClicked;
     _endingButton.clicked   += EndingButtonClicked;
     _loadButton.clicked     += LoadButtonClicked;
+
+    _fadeInScript = GameObject.Find("GoToOpeningScene Panel").GetComponent<FadeInScript>();
 	}
+
   private void StartButtonClicked()
   {
-    SceneManager.LoadScene("GameScene");
+    _fadeInScript.StartFadeIn();
+    Invoke("GoToOpeningScene", _fadeInScript.fadeTime);
   }
+
+  private void GoToOpeningScene()
+  {
+		SceneManager.LoadScene("Opening");
+	}
   private void QuitButtonClicked()
   {
     Application.Quit();
