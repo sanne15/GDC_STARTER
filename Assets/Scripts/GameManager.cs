@@ -49,12 +49,12 @@ public class GameManager : MonoBehaviour
     private void StartButtonClicked()
     {
         _fadeInScript.StartFadeIn();
-        Invoke("GoToOpeningScene", _fadeInScript.fadeTime);
+        Invoke("GoToOpeningScene", _fadeInScript.fadeTime + 1.0f);
     }
 
     private void GoToOpeningScene()
     {
-	    SceneManager.LoadScene("NameScene");
+        StartCoroutine(Loading(1.1f, "NameScene"));
     }
 
     private void QuitButtonClicked()
@@ -64,16 +64,22 @@ public class GameManager : MonoBehaviour
 
     private void SettingsButtonClicked()
     {
-	    SceneManager.LoadScene("Settings");
+        StartCoroutine(Loading(1.1f, "Settings"));
     }
 
     private void EndingButtonClicked()
     {
-	    SceneManager.LoadScene("EndingCompilation");
+	    StartCoroutine(Loading(1.1f, "EndingCompilation"));
     }
 
     private void LoadButtonClicked()
     {
         Debug.Log("저장 미구현...");
+    }
+
+    IEnumerator Loading(float delay, string message)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(message);
     }
 }
