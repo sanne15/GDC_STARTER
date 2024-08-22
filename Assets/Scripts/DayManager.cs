@@ -137,9 +137,9 @@ public class DayManager : MonoBehaviour
         int penalty = 270000;  // 벌금 계산 로직이 필요함
         int netEarnings = earnings;
 
-        earningsText.text = $"Earnings: {earnings}₩";
+        earningsText.text = $"오늘의 수익: {earnings}₩";
         penaltyText.text = $"이번주의 벌금: {penalty}₩";
-        netEarningsText.text = $"Cash: {netEarnings + moneyManager.GetMoney()}₩";
+        netEarningsText.text = $"총자산: {netEarnings + moneyManager.GetMoney()}₩";
 
         // money Added
         moneyManager.AddMoney(netEarnings);
