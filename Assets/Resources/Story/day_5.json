@@ -1,0 +1,286 @@
+{
+    "day": 5,
+    "storyNPCs": [
+        {
+            "name": "B16",
+            "dialogue": {
+                "characterName": "B16",
+                "sentences": [
+                    {
+                        "text": "{플레이어}. 자네는 로봇에 대해서 어떻게 생각하오?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "로봇분들도 인간분들도 다들 제 소중한 손님이시죠.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 말은 참 잘하는구만.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "감사합니다. 무슨 걱정이라도 있으신가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아니..그냥.. 인간이 로봇을 왜 싫어하나 해서.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "싫어하는 사람도 물론 있겠지만, 좋아하는 사람도 존재한다고 생각해요. 인간은 되게 복합적인 동물이니까요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "싫어하는 사람이 더 많지 않나?",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "왜 그렇게 생각하시나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "며칠 전에 길을 가고 있었는데 어린 아이들이 나에게 돌을 던지더군. 인스타에서 로봇이 사람을 잡아먹는다는 영상을 봤다나 뭐라나. 인간은 원래 그렇게 편을 가르고, 싸우는 걸 좋아하나 싶어서.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "그런 사람들도 존재하죠. 저도 인간이지만, 인간은 참으로 복합적인 동물인 것 같아요. 서로를 죽일듯이 미워하다가도 미친듯이 다른 이를 사랑하는 종족이니까요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "자네를 보고 있으면 김동진이 떠오르네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "김동진..? 이 누구죠?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "모르는가? 이 동네에서 유명한 사람이잖소. 인간과 로봇이 대화해야한다는 둥 헛소리 하는 사람.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "소문은 들었던 것 같기도 하고…",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아무튼 {플레이어}씨는 몽상가라는 말이오.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 그렇게 생각하실지도 모르겠네요. 그저 제 생각이였습니다.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "로봇과 인간은 공존할 수 없어.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "공존하고 있지 않습니까? 저는 가능하다고 생각해요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "내가 받은 상처를 아는가? 난 그저 로봇이라는 이유로 태어나자마자 공장으로 불려갔다고. 그저 로봇이라는 이유로 말이야.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "어쩔 수 없는 거잖습니까. 인간과 로봇이 공존하기 위해서는 능력이 뛰어난 로봇이 희생해야한다고 생각해요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "… 맞아요. 이건 인간의 잘못이죠. 로봇의 처우를 개선해야한다고 생각해요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "자네는 말이 꽤 통한다고 들었는데… 실망이네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "말이 좀 통하는 인간은 오랜만이군.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아무튼 라면은 잘 먹었네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "조심히 들어가세요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "songmyeongje",
+            "dialogue": {
+                "characterName": "송명제",
+                "sentences": [
+                    {
+                        "text": "{플레이어}. 부탁 좀 들어줄 수 있어?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "손님의 부탁이라면 언제든지 환영이랍니다. 무슨 부탁인가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "다름이 아니라, 이 스마트 안경을 작동하는 법을 모르겠어서…",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아 옆에 버튼을 누르시고..",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "오오..",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "이제 손을 움직이시면 되실겁니다.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "고맙네 {플레이어}. 딸 녀석이 어버이날 선물이라고 주고갔는데 도통 어떻게 쓰는지를 알 수가 있어야지 허허.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "따님이 효녀시네요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "효녀.. 다들 그렇게 말하는데 난 잘 모르겠어. 이런 안경보다 같이 앉아서 라면이랑 술 한잔 하고 싶은게 내가 진정 바라는 건데 말이야.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "아.. 따님은 많이 바쁘신가봐요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "맞아, 바쁘지. 그래서 이런 말을 꺼내는게 두려워. 딸에게 부담만 될 것 같아서 말이지 하하.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "그래도 한번 쯤 말해보는 건 어떠신가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그렇다면 말하기 더더욱 힘드시겠네요.. 생각이 참 깊으시네요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그럴까? 하하하 고민해보겠네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하…이해해줘서 고맙네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "따님은 어떤 일을 하세요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "무역 쪽 일을 한다네. 지금 아마 중국에 가있을거야.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "무역이라니. 멋진 일이네요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "예전부터 그 녀석의 꿈이였지. 나는 미국에 가라고 그렇게 설득했는데, 요즘 얘들은 중국을 좋아하더라고.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "요즘 얘들은 미국을 싫어하더군요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그렇지.. 내 아내가 실업 대란 때 목숨을 잃어서 말이야.. 로봇한테 자유를 주는 미국을 싫어하는 모양이야. 그래도 난 아직 미국이 좋더군. 중국같이 꽉막힌 체제는 싫단 말이지. 하하",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "이런 쪽은 잘 모르겠네요. 오랫동안 라면만 만들어서.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하 미안하네. 늙으니까 별의 별 말이 다 나오는군.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "이제 슬슬 가게를 마감하려고 하는데, 괜찮으신가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아 그럼! 나도 슬슬 집에 가서 딸내미 맞을 준비 해야겠네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "곧 오시나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "모레 다시 한국으로 온대. 괜찮다면 한번 데려오겠네.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "기대할게요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        }
+    ]
+}

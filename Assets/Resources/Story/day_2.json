@@ -134,7 +134,7 @@
                     {
                         "text": "어..? 아니에요! 괜찮아요..",
                         "speaker": 0,
-                        "emotion": "surprised"
+                        "emotion": "frightened"
                     },
                     {
                         "text": "제 성의니까 받아요. 팔 떨어지겠어요.",
@@ -170,7 +170,12 @@
                         "emotion": "neutral"
                     },
                     {
-                        "text": "말도 마세요. 얼마나 바쁜걸요. 아저씨야 말로 괜찮아요? 인간들 상락시에서 전부 쫒아낸다고 말이 많던데.",
+                        "text": "말도 마세요. 얼마나 바쁜걸요. 아저씨야 말로 괜찮아요?",
+                        "speaker": 0,
+                        "emotion": "exhausted"
+                    },
+                    {
+                        "text": "인간들을 상락시에서 전부 쫒아낸다고 말이 많던데.",
                         "speaker": 0,
                         "emotion": "exhausted"
                     },
@@ -190,7 +195,12 @@
                         "emotion": "neutral"
                     },
                     {
-                        "text": "장난이에요. 오늘은 잠이 안와서 오랜만에 왔어요. 오랜만에 와도 똑같네요. 이 가게는",
+                        "text": "장난이에요. 오늘은 잠이 안와서 오랜만에 왔어요. ",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "오랜만에 와도 똑같네요. 이 가게는",
                         "speaker": 0,
                         "emotion": "neutral"
                     },

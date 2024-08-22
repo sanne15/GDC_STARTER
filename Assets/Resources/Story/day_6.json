@@ -1,0 +1,266 @@
+{
+    "day": 4,
+    "storyNPCs": [
+        {
+            "name": "namyuchan",
+            "dialogue": {
+                "characterName": "남유찬",
+                "sentences": [
+                    {
+                        "text": "{플레이어}. 잘 지냈어?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "어 오랜만이네. 어때? 이번에 승진했다면서.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "말도 마. 주석님을 보좌하는게 여간 쉽지가 않아. 대통령님은 이런 일정을 어떻게 소화하시는지 몰라.",
+                        "speaker": 0,
+                        "emotion": "exhausted"
+                    },
+                    {
+                        "text": "근데 고위 공무원이면서 아직도 상락시에서 살아도 돼?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아. 그래서 곧 이사가야해. 그래도 가끔 들를 수는 있을 거야. 상락시 바로 옆에 살게 되었거든.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "진짜? 그럼 다행이고. 너 없으면 외로워서 어떻게 가게 운영해.",
+                        "speaker": 1,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "갑자기 징그럽게 왜이래.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 장난이지. 그래서 요즘 제일 힘든게 뭐야?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "말도 마. 중국이랑 미국이지. 미국이 요즘 우리나라 문화 뺏어가려는 거 봤어?",
+                        "speaker": 0,
+                        "emotion": "angry"
+                    },
+                    {
+                        "text": "뭐 뉴스에서 자주 나오긴 하던데",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "민주주의 정부 들은 다 왜이러는지 몰라. 맨날 주석이 바뀌어서 그런가? 우리나라도 실업대란 때 중국따라서 권위주의로 바꾸지 않았다면 큰일 났을꺼야.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "우리나라도 원래 민주주의였지?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "응. 그 구닥다리 정치체제. 실업 대란때 대응한다면서 서로 싸우다가 우리나라 망할뻔 했잖아.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그랬지 분명.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "권위주의처럼 결정이 빠른 체계가 얼마나 좋은데. 미국은 왜 아직도 민주주의인지 몰라.",
+                        "speaker": 0,
+                        "emotion": "frustrated"
+                    },
+                    {
+                        "text": "요즘 사람들이 미국 욕 엄청 하더만.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그치? MZ세대 할아버지들 말고는 미국 좋아하는 사람 없어. 그때는 미국이 초강대국이였지만 지금은 아니니까.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "역사 시간이야? 머리 아프네~",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "암튼 그 속에서 적당하게 비위 맞추느라 힘들어. 아무리 미국이 힘이 빠졌어도 미국이니까. 무슨 말인지 알지?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "뭐 난 잘 모르지만.. 너는 항상 똑똑했으니까 잘 할 거라고 믿어.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 언제 날 그렇게 칭찬했다고. 그래도 오랜만에 소꿉친구 보니까 좋네. 나는 이 가게가 안 없어졌으면 좋겠어.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "오~ 갑자기 정부가 싫어졌어?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "위험한 소리 하지말고. 나도 쉴 틈이 있어야하지 않겠어? 너까지 상락시를 떠난다면 꽤나 슬플거야.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "걱정하지마. 상락시에 사람이 안 살때까지 난 나가지 않아.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "고맙다 내 친구. 근데 이거 어디가서 말하지마.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "다음에 술 산다고 약속하면?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "알았어 알았어. 암튼 다음에 봐!",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "잘가!",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "choiyoonhyeok",
+            "dialogue": {
+                "characterName": "최윤혁",
+                "sentences": [
+                    {
+                        "text": "{플레이어}. 술 좀 더 줄 수 있나?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그럼요. 경감님. 힘든 일 있으신가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "말도 마. 요즘 로봇들 때문에 난리잖아.",
+                        "speaker": 0,
+                        "emotion": "frustrated"
+                    },
+                    {
+                        "text": "로봇들이요? 왜…",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "돈을 달래. 식권으로 주지말고. 자기들도 하고싶은게 많다잖아.",
+                        "speaker": 0,
+                        "emotion": "angry"
+                    },
+                    {
+                        "text": "그게 경찰 마음인가요..",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그러니까 말이야. 게다가 로봇은 식권도 하루에 4장 받고 원하는 취미 용품도 일주일에 하나씩 받아간다고..",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그런 시스템이라고 듣긴 한거 같아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "경찰인 나보다 훨씬 잘살아. 그런 주제에 무슨 자유.",
+                        "speaker": 0,
+                        "emotion": "frustrated"
+                    },
+                    {
+                        "text": "에이. 그래도 직업 선택의 자유도 없잖아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "주인장. 자네도 알잖아. 로봇 조약 문제인거. 이건 세계적으로 꼭 지켜줘야한다고.. 안지키면 혈맹인 중국이라도 우리나라를 뭉개 버릴지 몰라.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "에이 알고는 있지만…",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그것 뿐인가? 로봇때문에 인간 대부분이 실직했던 사건 기억하지? 실업대란. 로봇에게 과한 자유를 주어서는 안된다는 건 역사적으로 증명된 사실이야. 인간보다 로봇이 우선은 아니잖나.",
+                        "speaker": 0,
+                        "emotion": "angry"
+                    },
+                    {
+                        "text": "… 그럴지도 모르죠.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아무튼 골칫덩이들이야. 일이 끝나면 바로 시위라니 원. 업무시간을 늘리던지 해야할 거 아니야.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아무리 그래도 로봇도 그들의 고충이 있을텐데, 너무 하시는 것 같아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "맞는 말씀이신 것 같아요. 로봇 권리도 중요하지만, 인간이 우선 아닌가요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "말씀 감사합니다…",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하 감사합니다.",
+                        "speaker": 1,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "시간이 늦었네. 슬슬 마감해야하지 않나?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아 그렇네요. 경감님도 조심히 들어가세요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -164,15 +164,21 @@ public class DialogueManager : MonoBehaviour
 
     void AdjustBubbleSize()
     {
-        // TextMeshPro의 텍스트가 차지하는 공간 계산
-        Vector2 textSize = dialogueText.GetPreferredValues(dialogueText.text);
+        // 원하는 말풍선의 최대 폭을 설정합니다.
+        float maxWidth = 700f; // 원하는 최대 폭을 설정
 
-        // 말풍선에 여백을 추가하여 텍스트가 너무 꽉 차지 않도록 함
-        float paddingX = 30f; // 가로 여백
-        float paddingY = 20f; // 세로 여백
+        // TextMeshPro가 해당 폭에 맞춰 텍스트를 랩핑하도록 강제합니다.
+        dialogueText.enableWordWrapping = true;
+        dialogueText.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, maxWidth);
+
+        // TextMeshPro의 텍스트가 차지하는 공간을 계산합니다.
+        Vector2 textSize = dialogueText.GetPreferredValues(dialogueText.text, maxWidth, 0);
 
         // 말풍선의 크기를 텍스트 크기에 맞게 조정 (여기서는 약간의 여백을 더함)
-        bubbleRectTransform.sizeDelta = new Vector2(textSize.x + paddingX, textSize.y + paddingY);
+        float paddingX = 10f; // 가로 여백
+        float paddingY = 20f; // 세로 여백
+
+        bubbleRectTransform.sizeDelta = new Vector2(Mathf.Min(textSize.x + paddingX, maxWidth + paddingX), textSize.y + paddingY);
     }
 
     void EndDialogue()
