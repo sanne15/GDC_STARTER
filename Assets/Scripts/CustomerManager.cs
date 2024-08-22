@@ -5,7 +5,9 @@ using UnityEngine;
 public class CustomerManager : MonoBehaviour
 {
     public DialogueManager dialogueManager;
+    public AudioManager audioManager;
     public List<GameObject> CustomerPrefabs; // Prefab List
+    public GameObject MoneyEffectPrefab;
     public DialogueLoader dialogueLoader; // JSON 데이터를 로드하는 스크립트
 
     public int numberOfCustomers = 0;
@@ -41,6 +43,7 @@ public class CustomerManager : MonoBehaviour
             {
                 dialogueManager.currentCustomer = nextCustomer;
             }
+            audioManager.PlaySFX("DoorOpen");
             nextCustomer.EnterShop(() => StartDialogue(nextCustomer));
         }
         else
@@ -59,7 +62,12 @@ public class CustomerManager : MonoBehaviour
     IEnumerator HandleCustomerExit(Customer customer)
     {
         // 손님이 대화를 마치고 나가도록 함
+        audioManager.PlaySFX("Money");
+        GameObject Eff = Instantiate(MoneyEffectPrefab);        
+
         yield return customer.ExitShop(Random.value > 0.5f);
+        audioManager.PlaySFX("DoorClose");
+        Destroy(Eff);
 
         // 손님이 퇴장한 후 다음 손님이 입장
         StartNextCustomer();

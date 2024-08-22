@@ -890,6 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1293083232}
+  audioManager: {fileID: 1694924422}
   CustomerPrefabs:
   - {fileID: 889805751808790257, guid: 41f93074defcc2b4b89d32b2f4a26ad4, type: 3}
   - {fileID: 889805751808790257, guid: aa33955ee1c719f4d996d99f15b7be08, type: 3}
@@ -907,6 +908,7 @@ MonoBehaviour:
   - {fileID: 889805751808790257, guid: 29d56202104e8944fb3255032b2620c5, type: 3}
   - {fileID: 889805751808790257, guid: 93c6d44cc91529441b9cdd3f6279f1e0, type: 3}
   - {fileID: 889805751808790257, guid: 8a399e30290d62d4c93c6e0e49b3c25e, type: 3}
+  MoneyEffectPrefab: {fileID: 957784224749959149, guid: 71defb938aef5b046b05fb794ed15ac8, type: 3}
   dialogueLoader: {fileID: 592040580}
   numberOfCustomers: 0
 --- !u!1 &211039348
@@ -8730,6 +8732,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2341dbbfa3174d64994068cf40f7f420, type: 3}
   - {fileID: 8300000, guid: 6bdc4ab3a4abdb24889255c9248ff24a, type: 3}
   - {fileID: 8300000, guid: 492f0156cdf8ddd48a14bdcf1016ac1f, type: 3}
+  - {fileID: 8300000, guid: 8572f09b4cd9c234ca015d2be6df1ca5, type: 3}
+  - {fileID: 8300000, guid: 80a72546dd2bd734db6c564386754dd1, type: 3}
+  - {fileID: 8300000, guid: 33a192385c3f73e4f9f16868d367cbc1, type: 3}
 --- !u!4 &1694924423
 Transform:
   m_ObjectHideFlags: 0

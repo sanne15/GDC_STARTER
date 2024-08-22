@@ -8,6 +8,9 @@ public class Customer : MonoBehaviour
     public SpriteRenderer expressionSpriteRenderer; // 표정 등을 위한 SpriteRenderer
     public Sprite[] expressionSprites; // 표정이나 추가 요소에 사용할 스프라이트 배열
 
+    public AudioClip footstepClip; // 발걸음 소리 클립
+    public AudioSource audioSource;
+
     public enum Emotion
     {
         neutral,
@@ -36,6 +39,9 @@ public class Customer : MonoBehaviour
 
     void Awake()
     {
+        // AudioSource 초기화
+        // audioSource = GetComponent<AudioSource>();
+
         // Dictionary 초기화 및 EmotionSpriteMapping 배열 기반으로 채우기
         emotionToSpriteIndex = new Dictionary<Emotion, int>();
         foreach (var mapping in emotionSpriteMappings)
@@ -143,11 +149,18 @@ public class Customer : MonoBehaviour
 
     IEnumerator ExitWithEasing(bool exitToLeft)
     {
-        float duration = 1.0f; // 이동 시간
+        float duration = 1.5f; // 이동 시간
         float elapsedTime = 0f;
+
+        audioSource.volume = 1.0f; // 최대 볼륨
 
         Vector3 startPosition = transform.position;
         Vector3 endPosition;
+
+        // 발걸음 소리 재생        
+        audioSource.clip = footstepClip;
+        audioSource.Play();
+
 
         if (exitToLeft)
         {
@@ -169,6 +182,12 @@ public class Customer : MonoBehaviour
 
             elapsedTime += Time.deltaTime;
             yield return null;
+        }
+
+        // 발걸음 소리 중지
+        if (audioSource != null)
+        {
+            audioSource.Stop();
         }
 
         // 최종 위치 설정
