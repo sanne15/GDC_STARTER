@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class CustomerManager : MonoBehaviour
 {
-    public Queue<Customer> customerQueue;
     public DialogueManager dialogueManager;
     public List<GameObject> CustomerPrefabs; // Prefab List
+    public DialogueLoader dialogueLoader; // JSON 데이터를 로드하는 스크립트
+
+    public int numberOfCustomers = 0;
+    public Queue<Customer> customerQueue;
+    private List<Customer> currentCustomers = new List<Customer>();
 
     void Start()
     {
@@ -19,6 +23,8 @@ public class CustomerManager : MonoBehaviour
 
     public void InitializeDay(int day)
     {
+        dialogueLoader.LoadDialogueData(day); // 현재 day에 맞는 대화 데이터 로드
+
         // day에 따라 손님 리스트를 생성하고 큐에 추가
         customerQueue = new Queue<Customer>(GenerateCustomersForDay(day));
         StartNextCustomer();
@@ -40,6 +46,7 @@ public class CustomerManager : MonoBehaviour
 
     void StartDialogue(Customer customer)
     {
+        Dialogue dialogue = customer.dialogue;
         dialogueManager.StartDialogue(customer.dialogue, () => StartCoroutine(HandleCustomerExit(customer)));
     }
 
@@ -52,13 +59,48 @@ public class CustomerManager : MonoBehaviour
         StartNextCustomer();
     }
 
+    public int GetCustomersToday()
+    {
+        return numberOfCustomers;
+    }
+
     List<Customer> GenerateCustomersForDay(int day)
     {
         List<Customer> customers = new List<Customer>();
 
+        List<string> storyNPCNames = dialogueLoader.GetStoryNPCNames();
 
-        int numberOfCustomers = Random.Range(5, 8);
-        for (int i = 0; i < numberOfCustomers; i++)
+        numberOfCustomers = Random.Range(5, 8);
+
+        foreach (string npcName in storyNPCNames)
+        {
+            GameObject npcPrefab = GetNPCPrefab(npcName);
+            if (npcPrefab != null)
+            {
+                GameObject customerInstance = Instantiate(npcPrefab);
+                Customer customer = customerInstance.GetComponentInChildren<Customer>();
+
+                Dialogue dialogue = dialogueLoader.GetStoryNPCDialogue(npcName);
+                if (dialogue != null)
+                {
+                    customer.dialogue = dialogue;
+                    // Debug.Log($"Assigned dialogue for {npcName}: {dialogue.characterName}");
+                }
+                else
+                {
+                    // Debug.LogError($"Dialogue for {npcName} is null.");
+                }
+
+                customers.Add(customer);
+            }
+            else
+            {
+                // Debug.LogError($"Prefab for {npcName} not found.");
+            }
+        }
+
+        int remainingSpots = numberOfCustomers - storyNPCNames.Count;
+        for (int i = 0; i < remainingSpots; i++)
         {
             GameObject customerPrefab = CustomerPrefabs[Random.Range(0, CustomerPrefabs.Count)];
             GameObject customerInstance = Instantiate(customerPrefab);
@@ -79,13 +121,18 @@ public class CustomerManager : MonoBehaviour
         return customers;
     }
 
+    GameObject GetNPCPrefab(string npcName)
+    {
+        return CustomerPrefabs.Find(prefab => prefab.name == npcName);
+    }
+
     Dialogue GenerateRandomDialogue()
     {
         Dialogue dialogue = ScriptableObject.CreateInstance<Dialogue>();
 
         // 랜덤 이름 지정
-        string[] names = { "얄랴셩", "서휼", "이진환", "프레드리크 프랑수아 쇼팽", "네페르피트" };
-        dialogue.namae = names[Random.Range(0, names.Length)];
+        string[] names = { "얄랴셩", "서휼", "이진환", "프레드리크 프랑수아 쇼팽", "피트", "김민재"};
+        dialogue.characterName = names[Random.Range(0, names.Length)];
 
         // 랜덤 대사 생성
         string[] possibleSentences = {

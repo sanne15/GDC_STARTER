@@ -48,10 +48,10 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   expressionSpriteRenderer: {fileID: 3649968533980880911}
   expressionSprites:
-  - {fileID: -602611535, guid: 0d6a852705e813044847ef4ef7185895, type: 3}
-  - {fileID: -433447118, guid: 0d6a852705e813044847ef4ef7185895, type: 3}
-  - {fileID: 763162083, guid: 0d6a852705e813044847ef4ef7185895, type: 3}
-  - {fileID: -664106250, guid: 0d6a852705e813044847ef4ef7185895, type: 3}
+  - {fileID: 2132205516, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
+  - {fileID: 1974260777, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
+  - {fileID: -315170632, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
+  - {fileID: -318851112, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
 --- !u!212 &3649968533980880911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -602611535, guid: 0d6a852705e813044847ef4ef7185895, type: 3}
+  m_Sprite: {fileID: 2132205516, guid: bf47901f852adf546a3844d9f724a0d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

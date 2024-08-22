@@ -14,21 +14,33 @@ public class DialogueManager : MonoBehaviour
     public Image arrowImage; // 화살표 이미지 참조
     public ARPanelController arPanelController; // ARPanelController를 참조
 
+    public TextMeshProUGUI fastForwardText; // "빨리감기" 버튼의 TextMeshProUGUI 참조
+    public Color normalColor;
+    public Color activeColor = Color.white;
+    public float colorTransitionDuration = 0.1f;
+
     private Queue<string> sentences;
     private bool canProceed; // 다음 문장으로 진행할 수 있는지 여부를 나타냄
 
     private System.Action onDialogueComplete; // Conversation Ending Callback
+
+    private ControlManager controlManager;
+    private bool isColorTransitioning = false;
+
 
     void Start()
     {
         sentences = new Queue<string>();
         canProceed = false;
         bubbleCanvasGroup.alpha = 0; // 초기에는 말풍선을 투명하게 설정
+
+        controlManager = FindObjectOfType<ControlManager>();
+        normalColor = fastForwardText.fontMaterial.GetColor("_FaceColor"); // 기본 색상 설정
     }
 
     public void StartDialogue(Dialogue dialogue, System.Action onComplete)
     {
-        nameText.text = dialogue.namae;
+        nameText.text = dialogue.characterName;
         sentences.Clear();
 
         StartCoroutine(StartDialogueWithFadeIn(dialogue, onComplete)); // 대화 시작 시 말풍선 페이드 인
@@ -47,10 +59,32 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(AnimateArrow());
             DisplayNextSentence();
         }
+
+        if (controlManager.isCtrlPressed)
+        {
+            if (!isColorTransitioning)
+            {
+                StartCoroutine(ChangeTextColor(activeColor));
+            }
+        }
+        else
+        {
+            if (!isColorTransitioning)
+            {
+                StartCoroutine(ChangeTextColor(normalColor));
+            }
+        }
     }
 
     public void DisplayNextSentence()
     {
+        DayManager dayManager = FindObjectOfType<DayManager>();
+
+        if (dayManager.currentState == DayManager.GameState.Settlement)
+        {
+            return;
+        }
+
         if (sentences.Count == 0)
         {
             StartCoroutine(FadeOutBubble());
@@ -75,10 +109,22 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
             AdjustBubbleSize();
-            yield return new WaitForSeconds(typingSpeed); ;
+
+            if (!Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.RightControl))
+            {
+                yield return new WaitForSeconds(typingSpeed); // Ctrl 키가 눌리지 않았을 때만 대기
+            }
+            else
+            {
+                yield return new WaitForSeconds(0.01f); // Ctrl 키가 눌린 상태에서는 대기하지 않고 바로 다음 글자로 넘어감
+            }
         }
-        
-        yield return new WaitForSeconds(0.5f);
+
+        if (!Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.RightControl))
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
         canProceed = true;
 
     }
@@ -162,6 +208,25 @@ public class DialogueManager : MonoBehaviour
 
         // 원래 색으로 복구
         arrowImage.color = originalColor;
+    }
+
+    IEnumerator ChangeTextColor(Color targetColor)
+    {
+        isColorTransitioning = true;
+
+        Color currentColor = fastForwardText.fontMaterial.GetColor("_FaceColor");
+        float elapsed = 0f;
+
+        while (elapsed < colorTransitionDuration)
+        {
+            Color newColor = Color.Lerp(currentColor, targetColor, elapsed / colorTransitionDuration);
+            fastForwardText.fontMaterial.SetColor("_FaceColor", newColor);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        fastForwardText.fontMaterial.SetColor("_FaceColor", targetColor);
+        isColorTransitioning = false;
     }
 }
 

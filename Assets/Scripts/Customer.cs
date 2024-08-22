@@ -13,6 +13,15 @@ public class Customer : MonoBehaviour
     {
         // 초기화 시 alpha 값을 0으로 설정하여 보이지 않도록 함
         SetAlpha(0f);
+
+        // Dialogue가 할당되지 않은 경우 기본값 설정 (필요한 경우)
+        if (dialogue == null)
+        {
+            // Debug.LogWarning("Dialogue is not assigned on start. Please check the assignment.");
+            dialogue = ScriptableObject.CreateInstance<Dialogue>();
+            dialogue.characterName = "Default";
+            dialogue.sentences = new string[] { "No dialogue available." };
+        }
     }
 
     public void EnterShop(System.Action onCustomerSeated)
@@ -34,19 +43,38 @@ public class Customer : MonoBehaviour
             expressionSpriteRenderer.sprite = expressionSprites[0]; // 기본 표정으로 설정
         }
 
-        Debug.Log("Customer entered the shop: " + dialogue.namae);
+        if (dialogue != null)
+        {
+            if (!string.IsNullOrEmpty(dialogue.characterName))
+            {
+                Debug.Log("Customer entered the shop: " + dialogue.characterName);
+            }
+            else
+            {
+                Debug.LogWarning("Dialogue characterName is null or empty for this customer.");
+            }
+        }
         onCustomerSeated?.Invoke();
     }
 
     public IEnumerator ExitShop(bool exitToLeft)
     {
+        // 코루틴 시작 시점에 이미 파괴된 경우 바로 종료
+        if (expressionSpriteRenderer == null)
+        {
+            yield break;
+        }
+
         expressionSpriteRenderer.color = new Color(0.1f, 0.1f, 0.1f, 0.7f);
 
         // 퇴장 시 어두운 색상 효과 적용 및 캐릭터 삭제
         yield return StartCoroutine(ExitWithEasing(exitToLeft));
 
         // 캐릭터의 게임 오브젝트를 삭제
-        Destroy(gameObject);
+        if (expressionSpriteRenderer != null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator ApplyDarkTint()
