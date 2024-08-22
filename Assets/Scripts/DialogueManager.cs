@@ -31,12 +31,25 @@ public class DialogueManager : MonoBehaviour
     private bool isColorTransitioning2 = false;
 
     private string character_name_dialogue;
+    private string subcharacter_name_dialogue;
+
+    private Dictionary<string, string> dict_alias;
+    public string playername;
+    public string shopname;
 
     public Customer currentCustomer;
 
 
     void Start()
     {
+
+        dict_alias = new Dictionary<string, string>
+        {
+            { "플레이어", playername },
+            { "가게이름", shopname },
+            { "br", "\n" }
+        };
+
         sentences = new Queue<SentenceData>();
         canProceed = false;
         bubbleCanvasGroup.alpha = 0; // 초기에는 말풍선을 투명하게 설정
@@ -47,11 +60,28 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue, System.Action onComplete)
     {
+        foreach (var sentence in dialogue.sentences)
+        {
+            // 텍스트 치환 적용
+            sentence.text = ReplaceVariablesInText(sentence.text);
+        }
+
         nameText.text = dialogue.characterName;
         character_name_dialogue = nameText.text;
+        subcharacter_name_dialogue = dialogue.characterName;
         sentences.Clear();
 
         StartCoroutine(StartDialogueWithFadeIn(dialogue, onComplete)); // 대화 시작 시 말풍선 페이드 인
+    }
+
+    private string ReplaceVariablesInText(string text)
+    {
+        foreach (var entry in dict_alias)
+        {
+            string key = "(" + entry.Key + ")"; // (플레이어) 형태로 키를 찾음
+            text = text.Replace(key, entry.Value); // 텍스트 내에서 치환
+        }
+        return text;
     }
 
     void Update()
@@ -128,14 +158,25 @@ public class DialogueManager : MonoBehaviour
         canProceed = false; // 타이핑 중에는 진행할 수 없도록 설정
         float typingSpeed = 0.05f; // 각 글자 사이의 지연 시간 (초 단위)
 
-        if (sentence.speaker == 0)
+        // speaker : 0은 상대방 1은 주인장 2는 제 3자 3은 제 4자
+        switch (sentence.speaker)
         {
-            nameText.text = character_name_dialogue;
-            currentCustomer.ChangeExpression(sentence.emotion);
-        }
-        else
-        {
-            nameText.text = "주인장";
+            case 0:
+                nameText.text = character_name_dialogue;
+                currentCustomer.ChangeExpression(sentence.emotion);
+                break;
+
+            case 1:
+                nameText.text = playername;
+                break;
+
+            case 2:
+                nameText.text = subcharacter_name_dialogue;
+                break;
+
+            default:
+                Debug.Log($"Dialogue format invaild : speaker = {sentence.speaker}");
+                break;
         }
 
         foreach (char letter in sentence.text.ToCharArray())

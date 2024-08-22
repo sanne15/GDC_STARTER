@@ -11,7 +11,8 @@ public class OpeningTextController : MonoBehaviour
 
 	public string cutSceneText1;
 	public string cutSceneText2;
-	public string cutSceneText3;
+    [TextArea(3, 5)]
+    public string cutSceneText3;
 	public string cutSceneText4;
 	public string cutSceneText5;
 

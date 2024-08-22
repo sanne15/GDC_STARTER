@@ -7,7 +7,7 @@
                 "characterName": "B16",
                 "sentences": [
                     {
-                        "text": "{플레이어}. 자네는 로봇에 대해서 어떻게 생각하오?",
+                        "text": "(플레이어). 자네는 로봇에 대해서 어떻게 생각하오?",
                         "speaker": 0,
                         "emotion": "neutral"
                     },
@@ -77,7 +77,7 @@
                         "emotion": "neutral"
                     },
                     {
-                        "text": "아무튼 {플레이어}씨는 몽상가라는 말이오.",
+                        "text": "아무튼 (플레이어)씨는 몽상가라는 말이오.",
                         "speaker": 0,
                         "emotion": "neutral"
                     },
@@ -140,7 +140,7 @@
                 "characterName": "송명제",
                 "sentences": [
                     {
-                        "text": "{플레이어}. 부탁 좀 들어줄 수 있어?",
+                        "text": "(플레이어). 부탁 좀 들어줄 수 있어?",
                         "speaker": 0,
                         "emotion": "neutral"
                     },
@@ -170,7 +170,7 @@
                         "emotion": "neutral"
                     },
                     {
-                        "text": "고맙네 {플레이어}. 딸 녀석이 어버이날 선물이라고 주고갔는데 도통 어떻게 쓰는지를 알 수가 있어야지 허허.",
+                        "text": "고맙네 (플레이어). 딸 녀석이 어버이날 선물이라고 주고갔는데 도통 어떻게 쓰는지를 알 수가 있어야지 허허.",
                         "speaker": 0,
                         "emotion": "neutral"
                     },

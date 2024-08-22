@@ -7,8 +7,15 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     public string characterName;
+    public string subcharName;
+    public string altercharName;
     public List<SentenceData> sentences;
 
+    void Awake()
+    {
+        subcharName = "서은현";
+        altercharName = "진무대제";
+    }
     void OnEnable()
     {
         sentences = new List<SentenceData>();

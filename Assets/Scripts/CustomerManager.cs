@@ -138,6 +138,7 @@ public class CustomerManager : MonoBehaviour
                 continue;
             }
             customer.dialogue = GenerateRandomDialogue();
+            customer.dialogue.characterName = customerPrefab.name;
 
             customers.Add(customer);
         }
@@ -156,8 +157,8 @@ public class CustomerManager : MonoBehaviour
         Dialogue dialogue = ScriptableObject.CreateInstance<Dialogue>();
 
         // ·£´ı ÀÌ¸§ ÁöÁ¤
-        string[] names = { "¾â·ª¼Í", "¼­Èá", "ÀÌÁøÈ¯", "ÇÁ·¹µå¸®Å© ÇÁ¶û¼ö¾Æ ¼îÆØ", "ÇÇÆ®", "±è¹ÎÀç"};
-        dialogue.characterName = names[Random.Range(0, names.Length)];
+        // string[] names = { "¾â·ª¼Í", "¼­Èá", "ÀÌÁøÈ¯", "ÇÁ·¹µå¸®Å© ÇÁ¶û¼ö¾Æ ¼îÆØ", "ÇÇÆ®", "±è¹ÎÀç"};
+        // dialogue.characterName = names[Random.Range(0, names.Length)];
 
         // ·£´ı ´ë»ç »ı¼º
         string[] possibleSentences = {

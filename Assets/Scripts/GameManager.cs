@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     private void GoToOpeningScene()
     {
-	    SceneManager.LoadScene("Opening");
+	    SceneManager.LoadScene("NameScene");
     }
 
     private void QuitButtonClicked()

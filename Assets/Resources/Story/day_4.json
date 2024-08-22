@@ -7,7 +7,7 @@
                 "characterName": "남유찬",
                 "sentences": [
                     {
-                        "text": "{플레이어}. 잘 지냈어?",
+                        "text": "(플레이어). 잘 지냈어?",
                         "speaker": 0,
                         "emotion": "neutral"
                     },

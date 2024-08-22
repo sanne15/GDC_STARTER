@@ -5920,6 +5920,8 @@ MonoBehaviour:
   normalColor: {r: 0, g: 0, b: 0, a: 0}
   activeColor: {r: 1, g: 1, b: 1, a: 1}
   colorTransitionDuration: 0.1
+  playername: "\uC2DC\uC628"
+  shopname: "\uC0C1\uC2DD\uB2F9 \uBBF8\uBBF8"
   currentCustomer: {fileID: 0}
 --- !u!1 &1295583792
 GameObject:
