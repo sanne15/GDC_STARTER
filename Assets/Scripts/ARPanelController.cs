@@ -6,7 +6,7 @@ public class ARPanelController : MonoBehaviour
 {
     public CanvasGroup arPanel;
     public float fadeDuration = 0.5f;
-    private bool isPanelVisible = false;
+    public bool isPanelVisible = false;
 
     void Update()
     {
