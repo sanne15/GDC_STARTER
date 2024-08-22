@@ -1,266 +1,341 @@
 {
-    "day": 4,
-    "storyNPCs": [
-        {
-            "name": "namyuchan",
-            "dialogue": {
-                "characterName": "남유찬",
-                "sentences": [
-                    {
-                        "text": "{플레이어}. 잘 지냈어?",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "어 오랜만이네. 어때? 이번에 승진했다면서.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "말도 마. 주석님을 보좌하는게 여간 쉽지가 않아. 대통령님은 이런 일정을 어떻게 소화하시는지 몰라.",
-                        "speaker": 0,
-                        "emotion": "exhausted"
-                    },
-                    {
-                        "text": "근데 고위 공무원이면서 아직도 상락시에서 살아도 돼?",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "아. 그래서 곧 이사가야해. 그래도 가끔 들를 수는 있을 거야. 상락시 바로 옆에 살게 되었거든.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "진짜? 그럼 다행이고. 너 없으면 외로워서 어떻게 가게 운영해.",
-                        "speaker": 1,
-                        "emotion": "sad"
-                    },
-                    {
-                        "text": "갑자기 징그럽게 왜이래.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "하하. 장난이지. 그래서 요즘 제일 힘든게 뭐야?",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "말도 마. 중국이랑 미국이지. 미국이 요즘 우리나라 문화 뺏어가려는 거 봤어?",
-                        "speaker": 0,
-                        "emotion": "angry"
-                    },
-                    {
-                        "text": "뭐 뉴스에서 자주 나오긴 하던데",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "민주주의 정부 들은 다 왜이러는지 몰라. 맨날 주석이 바뀌어서 그런가? 우리나라도 실업대란 때 중국따라서 권위주의로 바꾸지 않았다면 큰일 났을꺼야.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "우리나라도 원래 민주주의였지?",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "응. 그 구닥다리 정치체제. 실업 대란때 대응한다면서 서로 싸우다가 우리나라 망할뻔 했잖아.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "그랬지 분명.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "권위주의처럼 결정이 빠른 체계가 얼마나 좋은데. 미국은 왜 아직도 민주주의인지 몰라.",
-                        "speaker": 0,
-                        "emotion": "frustrated"
-                    },
-                    {
-                        "text": "요즘 사람들이 미국 욕 엄청 하더만.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "그치? MZ세대 할아버지들 말고는 미국 좋아하는 사람 없어. 그때는 미국이 초강대국이였지만 지금은 아니니까.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "역사 시간이야? 머리 아프네~",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "암튼 그 속에서 적당하게 비위 맞추느라 힘들어. 아무리 미국이 힘이 빠졌어도 미국이니까. 무슨 말인지 알지?",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "뭐 난 잘 모르지만.. 너는 항상 똑똑했으니까 잘 할 거라고 믿어.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "하하. 언제 날 그렇게 칭찬했다고. 그래도 오랜만에 소꿉친구 보니까 좋네. 나는 이 가게가 안 없어졌으면 좋겠어.",
-                        "speaker": 0,
-                        "emotion": "delight"
-                    },
-                    {
-                        "text": "오~ 갑자기 정부가 싫어졌어?",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "위험한 소리 하지말고. 나도 쉴 틈이 있어야하지 않겠어? 너까지 상락시를 떠난다면 꽤나 슬플거야.",
-                        "speaker": 0,
-                        "emotion": "sad"
-                    },
-                    {
-                        "text": "걱정하지마. 상락시에 사람이 안 살때까지 난 나가지 않아.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "고맙다 내 친구. 근데 이거 어디가서 말하지마.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "다음에 술 산다고 약속하면?",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "알았어 알았어. 암튼 다음에 봐!",
-                        "speaker": 0,
-                        "emotion": "delight"
-                    },
-                    {
-                        "text": "잘가!",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "choiyoonhyeok",
-            "dialogue": {
-                "characterName": "최윤혁",
-                "sentences": [
-                    {
-                        "text": "{플레이어}. 술 좀 더 줄 수 있나?",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "그럼요. 경감님. 힘든 일 있으신가요?",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "말도 마. 요즘 로봇들 때문에 난리잖아.",
-                        "speaker": 0,
-                        "emotion": "frustrated"
-                    },
-                    {
-                        "text": "로봇들이요? 왜…",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "돈을 달래. 식권으로 주지말고. 자기들도 하고싶은게 많다잖아.",
-                        "speaker": 0,
-                        "emotion": "angry"
-                    },
-                    {
-                        "text": "그게 경찰 마음인가요..",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "그러니까 말이야. 게다가 로봇은 식권도 하루에 4장 받고 원하는 취미 용품도 일주일에 하나씩 받아간다고..",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "그런 시스템이라고 듣긴 한거 같아요.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "경찰인 나보다 훨씬 잘살아. 그런 주제에 무슨 자유.",
-                        "speaker": 0,
-                        "emotion": "frustrated"
-                    },
-                    {
-                        "text": "에이. 그래도 직업 선택의 자유도 없잖아요.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "주인장. 자네도 알잖아. 로봇 조약 문제인거. 이건 세계적으로 꼭 지켜줘야한다고.. 안지키면 혈맹인 중국이라도 우리나라를 뭉개 버릴지 몰라.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "에이 알고는 있지만…",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "그것 뿐인가? 로봇때문에 인간 대부분이 실직했던 사건 기억하지? 실업대란. 로봇에게 과한 자유를 주어서는 안된다는 건 역사적으로 증명된 사실이야. 인간보다 로봇이 우선은 아니잖나.",
-                        "speaker": 0,
-                        "emotion": "angry"
-                    },
-                    {
-                        "text": "… 그럴지도 모르죠.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "아무튼 골칫덩이들이야. 일이 끝나면 바로 시위라니 원. 업무시간을 늘리던지 해야할 거 아니야.",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "아무리 그래도 로봇도 그들의 고충이 있을텐데, 너무 하시는 것 같아요.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "맞는 말씀이신 것 같아요. 로봇 권리도 중요하지만, 인간이 우선 아닌가요.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "말씀 감사합니다…",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "하하 감사합니다.",
-                        "speaker": 1,
-                        "emotion": "delight"
-                    },
-                    {
-                        "text": "시간이 늦었네. 슬슬 마감해야하지 않나?",
-                        "speaker": 0,
-                        "emotion": "neutral"
-                    },
-                    {
-                        "text": "아 그렇네요. 경감님도 조심히 들어가세요.",
-                        "speaker": 1,
-                        "emotion": "neutral"
-                    }
-                ]
-            }
-        }
-    ]
+  "day": 7,
+  "storyNPCs": [
+    {
+      "name": "F83",
+      "dialogue": {
+        "characterName": "F83",
+        "sentences": [
+          {
+            "text": "{플레이어}씨, 혹시 어린 아이도 같이 먹어도 되나요?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "술만 아니라면 괜찮습니다.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "라면 하나랑, 앞접시 하나 주세요.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "어린 아이네요?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "하하… 맞아요. 정말 어린 아이죠..",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "유치원은 이미 끝났을 시간인데.. 무슨 일이라도 있는건가요?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "아, 그게… 제 아이에요. 저희 딸 다솜이에요",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "아..네?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "뭐.. 여기서 전부 이야기 할 수는 없지만, 아무튼 그래요",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "(목걸이가 눈에 띈다. 저건 부품 수리가 어려운 로봇이 받는 목걸이. 보여지는 숫자는 폐기 처분까지 남은 시간이라고 알고 있는데... 164시간이면 겨우 일 주 정도…)",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "좋은 보호자가 되는건 어렵네요~",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "응? 난 아빠가 세상에서 제일 좋은데! 나중에 크면 아빠처럼 멋있는 로봇이 될거야!",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "에이. 다솜이는 아빠보다 더 멋있는 사람으로 클텐데?",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "헤헤헤… 아빠 다음에는 어디를 갈까?",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "우리 다솜이 어디가고 싶어? 오늘 밤에는 밤새서 신나게 놀자~",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "헤헤.. 아빠 웬 일로 밤새는거 허락해줘? 완전 신난다!",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "앗, 아빠 나 화장실!",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "응응, 다녀와.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "하아… 인간인 {플레이어}씨가 정말 부럽네요. 이런 상황에서는 어떻게 설명해줘야 할지… 실업대란때 혼자 남겨진 저 아이를 데려온 건 제 실수였을까요… 웃긴 이야기죠.. 인간과 로봇이 가족이라니..",
+            "speaker": 0,
+            "emotion": "sad"
+          },
+          {
+            "text": "{플레이어}씨, 이런 상황에서 선의의 거짓말은 용서받을 수 있을까요?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1. 아이를 위해서 하는 것이라면, 괜찮다고 생각되네요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2. 어떤 상황에서도 거짓말은 용납되지 않습니다.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1-1. 그런가요? 하하… 인간이란 참 마음이 따뜻한 존재군요.",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "2-1. 역시 그런가요..",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "{플레이어}씨, 저는 로봇과 인간이 꼭 사이좋게 지낼 수 있을거라고 믿어요. 저와 다솜이의 관계가 평범해보이는 그런 세상이요..하하",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "1. (아무것도 하지않는다)",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2. (돈 만원을 주며) 이걸로 따님이랑 재밌게 노세요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "[1번의 경우, 다솜이 테러에서 사망, 2번의 경우 테러에서 생존]",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2-1. 네?! 괜찮아요.. 로봇 패스로도 충분히…",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "다녀왔습니다!",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "2-1-1. 아아… 정말 감사합니다..",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "혼자서도 잘 다녀왔구나.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "아빠! 이번에는 놀이동산 가자!",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "응응, 다솜아 가자. 오늘은 감사했습니다. 수고하세요.",
+            "speaker": 0,
+            "emotion": "delight"
+          }
+        ]
+      }
+    },
+    {
+      "name": "namyuchan",
+      "dialogue": {
+        "characterName": "남유찬",
+        "sentences": [
+          {
+            "text": "여 {플레이어}",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "요즘 자주오네?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "오늘은 일이 빨리 끝나서 와봤지. 그거 뿐만이 아니라 할 이야기도 있고.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "응? 무슨 이야기?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "별건 아니고, 너가 상락시에서 계속 살 거잖아?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그치",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "상락시는 이미 인간 경찰이 대부분 철수한지 오래인거 알고있지?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그래도 로봇 경찰이 남아 있으니까, 별 문제 없는걸로 아는데",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "뭐, 그렇지. 그런데 요즘 상락시에 남아있는 로봇을 대상으로 범죄를 저지르는 인간들의 조직인 상락파가 생긴 것 같아. 듣기로는 로봇을 납치해서 값어치 나가는 부품을 때서 암시장에 판다는 것 같아.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그건 처음 듣는데..",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "정부가 그런쪽에 관심이 없으니까 수사가 더딘 걸 노린 것 같아. 그래서 요즘 상락시에 있는 로봇들이 꽤나 불안해하더군.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "로봇 경찰은 뭐하고?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "너도 알다시피, 로봇 경찰의 상관은 무조건 인간이야. 로봇 관련 범죄같은 자잘한 범죄는 가볍게 조사하는게 정부의 지침인가봐. 꿈쩍도 안하더군.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "너가 뭐라도 해봐야하는거 아니야?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "이건 정부 지침 이어서 어떻게 할 수가 없어. 그리고 인간 관련 범죄가 우선시 되는건 당연하지않아? 그건 이상한게 아니야.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "난 그거보다 너가 걱정인거지. 정부가 상락시에서 손을 점점 때고 있잖아",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그렇지…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "이제 상락파도 돈을 가지고 있는 인간을 대상으로 범죄를 저지를지도 모른다는거지.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "정말 그럴지도 모르겠네..",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그리고 정부에 대한 로봇들의 불만도 심해지고 있어. 너가 정치에 관심이 없어서 모르겠지만, 강경파가 정부 내에서도 득세했거든.. 아마 로봇에 대한 제약의 수위를 더 높힐꺼야.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1. 그렇군…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2. 아무리 그래도 로봇한테 너무 심하게 구는 것 같은데.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1-1. 괜한 걱정이지만, 로봇 경찰을 믿지 마.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2-1. 나도 강경파가 좋은건 아니지만…뭐 그 사람들 말도 일리는 있으니 말이야..",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "주의 고마워. 조심할게.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "뉴스를 잘 안보는 내 친구는 내가 구해야되지 않겠어?",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "하하. 고마워. 오늘은 여기까지 가게를 운영하려고 하는데, 괜찮아?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "나도 슬슬 들어가려고 하는 참이었어. 다음에 보자고!",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "잘 들어가.",
+            "speaker": 1,
+            "emotion": "neutral"
+          }
+        ]
+      }
+    }
+  ]
 }

@@ -821,7 +821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.45911938, g: 0.45911938, b: 0.45911938, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -903,6 +903,10 @@ MonoBehaviour:
   - {fileID: 889805751808790257, guid: ad0d45286a9baaf4a949a04c47457ab5, type: 3}
   - {fileID: 889805751808790257, guid: 18f87d52c8ac9574890f9d258fbaff56, type: 3}
   - {fileID: 889805751808790257, guid: abf24574c07506c41856ba22ddfb4da5, type: 3}
+  - {fileID: 889805751808790257, guid: b77c6abba8827914893c8be173bfa9dd, type: 3}
+  - {fileID: 889805751808790257, guid: 29d56202104e8944fb3255032b2620c5, type: 3}
+  - {fileID: 889805751808790257, guid: 93c6d44cc91529441b9cdd3f6279f1e0, type: 3}
+  - {fileID: 889805751808790257, guid: 8a399e30290d62d4c93c6e0e49b3c25e, type: 3}
   dialogueLoader: {fileID: 592040580}
   numberOfCustomers: 0
 --- !u!1 &211039348
@@ -1843,8 +1847,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1507585194}
   - {fileID: 690865087}
+  - {fileID: 1507585194}
   - {fileID: 1475337296}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
