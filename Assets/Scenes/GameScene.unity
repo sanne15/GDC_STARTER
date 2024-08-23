@@ -3204,6 +3204,7 @@ MonoBehaviour:
   penaltyText: {fileID: 806436110}
   netEarningsText: {fileID: 1157143289}
   nextDayButton: {fileID: 854687736}
+  karmaManager: {fileID: 0}
 --- !u!4 &799528723
 Transform:
   m_ObjectHideFlags: 0
@@ -8727,7 +8728,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f977f556a0238664bb57777a0ea03b1e, type: 3}
   - {fileID: 8300000, guid: cc6b8ad1a20d17649a812faab4d7a7e9, type: 3}
   - {fileID: 8300000, guid: 9a1a0609d9a734b43ac2604460b42b55, type: 3}
-  - {fileID: 8300000, guid: 1792ce8669c018b46a432db204da1c36, type: 3}
+  - {fileID: 8300000, guid: 03851d26da5c4b14ca8b196286a2424a, type: 3}
   - {fileID: 8300000, guid: d6e6399d3501b554aa85d499cc6a88c8, type: 3}
   sfxClips:
   - {fileID: 8300000, guid: 2341dbbfa3174d64994068cf40f7f420, type: 3}
