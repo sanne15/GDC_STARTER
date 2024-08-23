@@ -26,6 +26,8 @@ public class DayManager : MonoBehaviour
     public TMP_Text netEarningsText; // 순수익 텍스트
     public Button nextDayButton; // Next Day 버튼
 
+    public KarmaManager karmaManager;
+
     private int originalFadePanelIndex;
     private int originalDayTextIndex;
 
@@ -61,6 +63,11 @@ public class DayManager : MonoBehaviour
     public void NextDay()
     {
         currentDay++;
+        if (currentDay >= 8)
+        {
+            karmaManager.MakeEnding(0);
+        }
+        
         StartCoroutine(DayTransition());
         nextDayButtonClicked = false;
     }
