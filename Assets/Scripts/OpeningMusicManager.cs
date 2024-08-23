@@ -33,6 +33,16 @@ public class MusicManager : MonoBehaviour
             SceneManager.sceneLoaded -= OnSceneLoaded; // 이벤트 구독 해제
             Destroy(gameObject);
         }
+        else if (scene.name.StartsWith("Ending"))
+        {
+            // 음량을 0%로 설정
+            audioSource.volume = 0f;
+        }
+        else
+        {
+            // 음량을 100%로 설정
+            audioSource.volume = 1f;
+        }
     }
 
     void Start()

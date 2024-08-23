@@ -57,10 +57,8 @@ public class NameSceneManager : MonoBehaviour
             return;
         }
 
-        // 입력된 데이터를 처리할 수 있습니다. 예를 들어 PlayerPrefs에 저장할 수 있습니다.
-        PlayerPrefs.SetString("PlayerSurname", surname);
-        PlayerPrefs.SetString("PlayerName", name);
-        PlayerPrefs.SetString("PlayerNickname", nickname);
+        // NamePasser 인스턴스에 변수 전달
+        NamePasser.Instance.SetPlayerInfo(name, surname, nickname);
 
         // 페이드 아웃과 다음 씬으로의 전환
         StartCoroutine(FadeOutAndLoadNextScene());

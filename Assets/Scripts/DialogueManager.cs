@@ -35,6 +35,8 @@ public class DialogueManager : MonoBehaviour
 
     private Dictionary<string, string> dict_alias;
     public string playername;
+    public string playersurname;
+    public string playeraltername;
     public string shopname;
 
     public Customer currentCustomer;
@@ -42,13 +44,18 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        playername = NamePasser.Instance.playername;
+        playersurname = NamePasser.Instance.playersurname;
+        playeraltername = NamePasser.Instance.playeraltername;
 
         dict_alias = new Dictionary<string, string>
         {
-            { "플레이어", playername },
+            { "플레이어", playeraltername },
+            { "성씨",  playersurname },
+            { "이름", playername },
             { "가게이름", shopname },
             { "br", "\n" }
-        };
+        };        
 
         sentences = new Queue<SentenceData>();
         canProceed = false;

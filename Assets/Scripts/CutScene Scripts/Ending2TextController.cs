@@ -26,13 +26,13 @@ public class Ending2TextController : MonoBehaviour
 		_endingText = GetComponent<TextMeshProUGUI>();
 		_endingText.text = string.Empty;
 
-		playerName = PlayerPrefs.GetString("PlayerName");
+        playerName = NamePasser.Instance.playeraltername;
 
-		cutSceneText1 = $"남유찬 : 여, {playerName}. 오랜만이네.";
+        cutSceneText1 = $"남유찬 : 여, {playerName}. 오랜만이네.";
 		cutSceneText2 = $"{playerName} : 응. 서울도 꽤나 좋은 것 같구만.";
 		cutSceneText3 = $"{playerName} : 못된 로봇이 없으니까, 훨씬 장사하기도 수월한 것 같네.";
 		cutSceneText4 = "남유찬 : 그렇지. 서울의 치안은 끝내준다고. 더이상 로봇이 돌아다닐 일도 없고 말이야.";
-		cutSceneText5 = "주인장 : 하하하";
+		cutSceneText5 = $"{playerName} : 하하하";
 		cutSceneText6 = "[Ed 2. 소시민]";
 	}
 

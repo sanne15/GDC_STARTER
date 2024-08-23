@@ -777,6 +777,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770949288}
   m_CullTransparentMesh: 1
+--- !u!1 &781478946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781478947}
+  m_Layer: 0
+  m_Name: NamePassObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &781478947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781478946}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 148.20079, y: 133.2569, z: -22.645945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797962941
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +995,7 @@ GameObject:
   - component: {fileID: 899477752}
   - component: {fileID: 899477753}
   m_Layer: 0
-  m_Name: Scripter
+  m_Name: NameScripter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,3 +3259,4 @@ SceneRoots:
   - {fileID: 1898430694}
   - {fileID: 2114715560}
   - {fileID: 899477752}
+  - {fileID: 781478947}
