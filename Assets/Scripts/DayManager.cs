@@ -37,6 +37,7 @@ public class DayManager : MonoBehaviour
 
     void Start()
     {
+        fadePanel.SetActive(false);
         UpdateDayText();
 
          moneyManager = FindObjectOfType<Moneymanager>();
@@ -84,6 +85,7 @@ public class DayManager : MonoBehaviour
 
     IEnumerator DayTransition()
     {
+        fadePanel.SetActive(true);
         // Fadeout
         yield return StartCoroutine(FadeOut());
 
@@ -128,7 +130,7 @@ public class DayManager : MonoBehaviour
         yield return StartCoroutine(FadeIn());
 
         currentState = GameState.Dialogue;
-
+        fadePanel.SetActive(false);
         StartDay();
     }
 

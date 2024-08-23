@@ -12,16 +12,24 @@ public class DialogueManager : MonoBehaviour
     public RectTransform bubbleRectTransform; // 말풍선의 RectTransform을 참조
     public CanvasGroup bubbleCanvasGroup; // 말풍선의 CanvasGroup 참조
     public Image arrowImage; // 화살표 이미지 참조
+    public Image thoughtPanel; // 말풍선 이미지 참조
+    public BallonManager ballonManager; // BallonManager 참조
     public ARPanelController arPanelController; // ARPanelController를 참조
+    public AudioManager audioManager;
 
     public TextMeshProUGUI fastForwardText; // "빨리감기" 버튼의 TextMeshProUGUI 참조
     public TextMeshProUGUI LogText; // "대화로그" 버튼의 TextMeshProUGUI 참조
+    public TextMeshProUGUI dialogueLogText; // 대화 로그를 표시할 TextMeshProUGUI
+    public ScrollRect scrollRect;  // ScrollRect 컴포넌트를 참조
+
     public Color normalColor = new Color(0.3f, 0.3f, 0.3f, 1f);
     public Color activeColor = Color.white;
     public float colorTransitionDuration = 0.1f;
 
     private Queue<SentenceData> sentences;
     private bool canProceed; // 다음 문장으로 진행할 수 있는지 여부를 나타냄
+    private Queue<string> dialogueLogQueue; // 대화 로그를 저장할 큐
+    private const int maxLogLines = 100; // 로그에 표시될 최대 줄 수
 
     private System.Action onDialogueComplete; // Conversation Ending Callback
     private bool Colorcount = false;
@@ -41,9 +49,12 @@ public class DialogueManager : MonoBehaviour
 
     public Customer currentCustomer;
 
+    private Color originalColor;
+    private bool isUserScrolling = false; // 사용자가 스크롤바를 잡고 있는지 확인
 
     void Start()
     {
+        originalColor = arrowImage.color;
         playername = NamePasser.Instance.playername;
         playersurname = NamePasser.Instance.playersurname;
         playeraltername = NamePasser.Instance.playeraltername;
@@ -55,14 +66,29 @@ public class DialogueManager : MonoBehaviour
             { "이름", playername },
             { "가게이름", shopname },
             { "br", "\n" }
-        };        
+        };
+
+        scrollRect.onValueChanged.AddListener(OnScrollValueChanged);
 
         sentences = new Queue<SentenceData>();
+        dialogueLogQueue = new Queue<string>();
         canProceed = false;
         bubbleCanvasGroup.alpha = 0; // 초기에는 말풍선을 투명하게 설정
 
         controlManager = FindObjectOfType<ControlManager>();
         normalColor = fastForwardText.fontMaterial.GetColor("_FaceColor"); // 기본 색상 설정
+    }
+
+    void OnDestroy()
+    {
+        // 이벤트 리스너 제거
+        scrollRect.onValueChanged.RemoveListener(OnScrollValueChanged);
+    }
+
+    void OnScrollValueChanged(Vector2 position)
+    {
+        // 사용자가 스크롤바를 직접 움직이고 있는지 확인
+        isUserScrolling = true;
     }
 
     public void StartDialogue(Dialogue dialogue, System.Action onComplete)
@@ -147,8 +173,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        SentenceData sentenceData = sentences.Dequeue();
-        // StopAllCoroutines();
+        SentenceData sentenceData = sentences.Dequeue();        
         StartCoroutine(TypeSentence(sentenceData));
     }
 
@@ -163,7 +188,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = "";
         canProceed = false; // 타이핑 중에는 진행할 수 없도록 설정
-        float typingSpeed = 0.05f; // 각 글자 사이의 지연 시간 (초 단위)
+        float typingSpeed = 0.02f; // 각 글자 사이의 지연 시간 (초 단위)
 
         // speaker : 0은 상대방 1은 주인장 2는 제 3자 3은 제 4자
         switch (sentence.speaker)
@@ -171,20 +196,25 @@ public class DialogueManager : MonoBehaviour
             case 0:
                 nameText.text = character_name_dialogue;
                 currentCustomer.ChangeExpression(sentence.emotion);
+                ballonManager.IsTalkingtoYou(false); // 상대방 말풍선 설정
                 break;
 
             case 1:
-                nameText.text = playername;
+                nameText.text = playeraltername;
+                ballonManager.IsTalkingtoYou(true); // 플레이어 말풍선 설정
                 break;
 
             case 2:
                 nameText.text = subcharacter_name_dialogue;
+                ballonManager.IsTalkingtoYou(false); // 제 3자도 상대방으로 간주
                 break;
 
             default:
                 Debug.Log($"Dialogue format invaild : speaker = {sentence.speaker}");
                 break;
         }
+
+        AddToDialogueLog(nameText.text, sentence.text);
 
         foreach (char letter in sentence.text.ToCharArray())
         {
@@ -284,7 +314,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator AnimateArrow()
     {
-        Color originalColor = arrowImage.color;
+        audioManager.PlaySFX("click");
         Color fadedColor = new Color(originalColor.r, originalColor.g, originalColor.b, 0.3f);
 
         // 색을 바래게 만듦
@@ -344,6 +374,29 @@ public class DialogueManager : MonoBehaviour
 
         LogText.fontMaterial.SetColor("_FaceColor", targetColor);
         isColorTransitioning2 = false;
+    }
+
+    // 대화 로그에 문장을 추가하고 화면에 표시하는 메서드
+    void AddToDialogueLog(string speaker, string text)
+    {
+        string logEntry = $"{speaker} : {text}";
+        dialogueLogQueue.Enqueue(logEntry);
+
+        // 대화 로그가 30줄을 넘으면 가장 오래된 줄을 제거
+        if (dialogueLogQueue.Count > maxLogLines)
+        {
+            dialogueLogQueue.Dequeue();
+        }
+
+        // 대화 로그를 TextMeshProUGUI에 표시
+        dialogueLogText.text = string.Join("\n", dialogueLogQueue.ToArray());
+
+        /* 텍스트가 담긴 Content의 높이를 텍스트의 높이에 맞게 조정
+        float textHeight = dialogueLogText.preferredHeight;
+        RectTransform contentRect = dialogueLogText.GetComponent<RectTransform>();
+        contentRect.sizeDelta = new Vector2(contentRect.sizeDelta.x, textHeight); */
+
+        // scrollRect.verticalNormalizedPosition = 0f;
     }
 }
 
