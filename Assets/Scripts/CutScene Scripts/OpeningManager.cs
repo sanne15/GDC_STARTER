@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class OpeningManager : MonoBehaviour
 {
 	private OpeningTextController _textController;
 	private FadeOutScript _textFadeOutScript;
+
+	private CutSceneAudioManager _audioManager;
 
 	private FadeInScript _cut1FadeInScript;
 	private FadeInScript _cut2FadeInScript;
@@ -22,19 +25,21 @@ public class OpeningManager : MonoBehaviour
 	private FadeOutScript _cut4FadeOutScript;
 	private FadeOutScript _cut5FadeOutScript;
 
-
 	public float holdCut1;
 	public float holdCut2;
 	public float holdCut3;
 	public float holdCut4;
 	public float holdCut5;
 
+	public float beforeOpening;
 	public float beforeText;
 
 	private void Awake()
 	{
-		_textController = GameObject.Find("Opening Text").GetComponent<OpeningTextController>();
+		_textController	= GameObject.Find("Opening Text").GetComponent<OpeningTextController>();
 		_textFadeOutScript = GameObject.Find("Opening Text").GetComponent<FadeOutScript>();
+
+		_audioManager = GameObject.Find("AudioManager").GetComponent<CutSceneAudioManager>();
 
 		_cut1FadeInScript = GameObject.Find("Cut1").GetComponent<FadeInScript>();
 		_cut2FadeInScript = GameObject.Find("Cut2").GetComponent<FadeInScript>();
@@ -55,7 +60,6 @@ public class OpeningManager : MonoBehaviour
 	{
 		StartCoroutine(StartOpening());
 	}
-
 	private IEnumerator StartOpening()
 	{
 		yield return StartCoroutine(DisplayCut1());
@@ -68,6 +72,7 @@ public class OpeningManager : MonoBehaviour
 
 	private IEnumerator DisplayCut1()
 	{
+		_audioManager.StartFadeIn();
 		_cut1FadeInScript.StartFadeIn();
 		yield return new WaitForSeconds(_cut1FadeInScript.fadeTime + beforeText);
 		yield return StartCoroutine(_textController.DisplayText1());
@@ -120,6 +125,7 @@ public class OpeningManager : MonoBehaviour
 
 	private IEnumerator GoToGameScene()
 	{
+		_audioManager.StartFadeOut();
 		_panelFadeInScript.StartFadeIn();
 		yield return new WaitForSeconds(_panelFadeInScript.fadeTime);
 		SceneManager.LoadScene("GameScene");

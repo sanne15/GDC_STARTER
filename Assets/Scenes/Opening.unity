@@ -238,6 +238,149 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117580152}
   m_CullTransparentMesh: 1
+--- !u!1 &379614812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379614814}
+  - component: {fileID: 379614813}
+  - component: {fileID: 379614815}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &379614813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379614812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36063e459deb34f4abffe1ff7cfbb817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInTime: 0.5
+  fadeOutTime: 1
+--- !u!4 &379614814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379614812}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.920124, y: 14.791703, z: -0.18597724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &379614815
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379614812}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9a1a0609d9a734b43ac2604460b42b55, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &444107725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,16 +1281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4c743605fcc7b4fbff24f235d6b249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutSceneText1: "- (\uD50C\uB808\uC774\uC5B4)\uC57C~ \uBC16\uC5D0\uC11C \uADF8\uB9CC
-    \uB180\uACE0 \uC880 \uB3C4\uC6B0\uB834!\n- \uB124~"
-  cutSceneText2: "\uD6C4\uC6B0.. \uAC00\uAC8C \uC6B4\uC601\uC774 \uC27D\uC9C0 \uC54A\uB124.
-    \uBD80\uBAA8\uB2D8\uC740 \uC774\uB7F0 \uAC78 \uC5B4\uB5BB\uAC8C \uD558\uC2E0
-    \uAC74\uC9C0.."
-  cutSceneText3: "\uC0C1\uB77D\uC2DC\uC5D0\uC11C \uB098\uAC00\uB77C\uACE0? \uBC8C\uAE08\uC744
-    \uBD80\uACFC\uD558\uACA0\uB2E4\uACE0?\n\uD765\u2026 \uB0B4 \uACE0\uD5A5\uC744
-    \uADF8\uB807\uAC8C \uC27D\uAC8C \uBC84\uB9AC\uACA0\uB0D0\uACE0\u2026"
-  cutSceneText4: "\uC8FC\uC778\uC7A5! \uC5EC\uAE30 \uB77C\uBA74 \uD55C\uADF8\uB987!"
-  cutSceneText5: "\uB124~ \uC624\uB298 \uD558\uB8E8\uB294 \uC5B4\uB5A0\uC168\uB098\uC694?"
   textSpeed: 0.08
 --- !u!1 &1501294717
 GameObject:
@@ -1314,6 +1447,7 @@ MonoBehaviour:
   holdCut3: 2
   holdCut4: 2
   holdCut5: 2
+  beforeOpening: 0
   beforeText: 0.2
 --- !u!1 &2104418947
 GameObject:
@@ -1391,3 +1525,4 @@ SceneRoots:
   - {fileID: 1364202763}
   - {fileID: 2104418950}
   - {fileID: 1607337995}
+  - {fileID: 379614814}

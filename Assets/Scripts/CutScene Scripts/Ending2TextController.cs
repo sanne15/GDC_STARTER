@@ -4,12 +4,11 @@ using System.Text;
 using UnityEngine;
 using TMPro;
 
-public class OpeningTextController : MonoBehaviour
+public class Ending2TextController : MonoBehaviour
 {
 	private CanvasGroup _canvasGroup;
-	private TextMeshProUGUI _openingText;
+	private TextMeshProUGUI _endingText;
 
-	public float textSpeed;
 	private string playerName;
 
 	private string cutSceneText1;
@@ -17,40 +16,45 @@ public class OpeningTextController : MonoBehaviour
 	private string cutSceneText3;
 	private string cutSceneText4;
 	private string cutSceneText5;
+	private string cutSceneText6;
+
+	public float textSpeed;
 
 	private void Awake()
 	{
 		_canvasGroup = gameObject.GetComponent<CanvasGroup>();
-		_openingText = GetComponent<TextMeshProUGUI>();
-		_openingText.text = string.Empty;
+		_endingText = GetComponent<TextMeshProUGUI>();
+		_endingText.text = string.Empty;
 
 		playerName = PlayerPrefs.GetString("PlayerName");
-		cutSceneText1 = $"- {playerName}야~ 밖에서 그만 놀고 좀 도우렴!\n- 네~";
-		cutSceneText2 = "후우.. 가게 운영이 쉽지 않네. 부모님은 이런 걸 어떻게 하신 건지..";
-		cutSceneText3 = "상락시에서 나가라고? 벌금을 부과하겠다고?\n흥… 내 고향을 그렇게 쉽게 버리겠냐고…";
-		cutSceneText4 = "주인장! 여기 라면 한그릇!";
-		cutSceneText5 = "네~ 오늘 하루는 어떠셨나요?";
+
+		cutSceneText1 = $"남유찬 : 여, {playerName}. 오랜만이네.";
+		cutSceneText2 = $"{playerName} : 응. 서울도 꽤나 좋은 것 같구만.";
+		cutSceneText3 = $"{playerName} : 못된 로봇이 없으니까, 훨씬 장사하기도 수월한 것 같네.";
+		cutSceneText4 = "남유찬 : 그렇지. 서울의 치안은 끝내준다고. 더이상 로봇이 돌아다닐 일도 없고 말이야.";
+		cutSceneText5 = "주인장 : 하하하";
+		cutSceneText6 = "[Ed 2. 소시민]";
 	}
 
 	public void ResetText()
 	{
-		_openingText.text = string.Empty;
+		_endingText.text = string.Empty;
 		_canvasGroup.alpha = 1f;
 	}
 
 	private IEnumerator TypingEffect(string text)
 	{
-		StringBuilder openingTextBuilder = new StringBuilder();
+		StringBuilder endingTextBuilder = new StringBuilder();
 		for (int i = 0; i < text.Length; i++)
 		{
 			if (char.IsWhiteSpace(text[i]))
 			{
-				openingTextBuilder.Append(text[i]);
-				_openingText.text = openingTextBuilder.ToString();
+				endingTextBuilder.Append(text[i]);
+				_endingText.text = endingTextBuilder.ToString();
 				i++;
 			}
-			openingTextBuilder.Append(text[i]);
-			_openingText.text = openingTextBuilder.ToString();
+			endingTextBuilder.Append(text[i]);
+			_endingText.text = endingTextBuilder.ToString();
 			yield return new WaitForSeconds(textSpeed);
 		}
 	}
@@ -78,5 +82,10 @@ public class OpeningTextController : MonoBehaviour
 	public IEnumerator DisplayText5()
 	{
 		yield return StartCoroutine(TypingEffect(cutSceneText5));
+	}
+
+	public IEnumerator DisplayText6()
+	{
+		yield return StartCoroutine(TypingEffect(cutSceneText6));
 	}
 }

@@ -1,17 +1,17 @@
 .ending {
     align-self: center;
     width: 50%;
-    height: 90%;
+    height: 100%;
     flex-grow: initial;
     align-items: center;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    padding-top: 1%;
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .endingButton {
@@ -62,15 +62,20 @@
     width: 30%;
     height: 18%;
     background-image: url("project://database/Assets/Images/MainMenu%20Images/paint.png?fileID=2800000&guid=92714218a663cf24eb30e49ef9510f84&type=3#paint");
-    -unity-font-style: bold;
+    -unity-font-style: normal;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 3%;
     margin-right: 0;
     margin-left: 0;
     -unity-font: url("project://database/Assets/TextMesh%20Pro/Fonts/KIMJUNGCHULMYUNGJO-REGULAR.TTF?fileID=12800000&guid=eafbf02a780c7af4aaee4b41df8add7d&type=3#KIMJUNGCHULMYUNGJO-REGULAR");
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .backButton {
+    background-image: url("project://database/Assets/Images/MainMenu%20Images/goBack%20plain.png?fileID=2800000&guid=5b6ed0d2778b69d42bfe14d1808d9b27&type=3#goBack plain");
 }
 
 .backButton:hover {
