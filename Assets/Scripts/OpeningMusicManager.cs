@@ -28,7 +28,7 @@ public class MusicManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // 게임 씬으로 변경되면 MusicManager를 파괴
-        if (scene.name == "GameScene")
+        if (scene.name == "Opening")
         {
             SceneManager.sceneLoaded -= OnSceneLoaded; // 이벤트 구독 해제
             Destroy(gameObject);
