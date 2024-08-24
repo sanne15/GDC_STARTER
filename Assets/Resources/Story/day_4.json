@@ -155,7 +155,7 @@
                 "characterName": "최윤혁",
                 "sentences": [
                     {
-                        "text": "{플레이어}. 술 좀 더 줄 수 있나?",
+                        "text": "(플레이어). 술 좀 더 줄 수 있나?",
                         "speaker": 0,
                         "emotion": "neutral"
                     },

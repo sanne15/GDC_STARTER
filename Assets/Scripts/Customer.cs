@@ -11,6 +11,8 @@ public class Customer : MonoBehaviour
     public AudioClip footstepClip; // 발걸음 소리 클립
     public AudioSource audioSource;
 
+    public string hangeulname;
+
     public enum Emotion
     {
         neutral,

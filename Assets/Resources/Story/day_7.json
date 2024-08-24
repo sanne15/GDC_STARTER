@@ -5,6 +5,7 @@
       "name": "F83",
       "dialogue": {
         "characterName": "F83",
+        "subcharacterName": "김다솜",
         "sentences": [
           {
             "text": "(플레이어)씨, 혹시 어린 아이도 같이 먹어도 되나요?",
@@ -63,7 +64,7 @@
           },
           {
             "text": "응? 난 아빠가 세상에서 제일 좋은데! 나중에 크면 아빠처럼 멋있는 로봇이 될거야!",
-            "speaker": 0,
+            "speaker": 2,
             "emotion": "delight"
           },
           {
@@ -73,7 +74,7 @@
           },
           {
             "text": "헤헤헤… 아빠 다음에는 어디를 갈까?",
-            "speaker": 0,
+            "speaker": 2,
             "emotion": "delight"
           },
           {
@@ -83,12 +84,12 @@
           },
           {
             "text": "헤헤.. 아빠 웬 일로 밤새는거 허락해줘? 완전 신난다!",
-            "speaker": 0,
+            "speaker": 2,
             "emotion": "delight"
           },
           {
             "text": "앗, 아빠 나 화장실!",
-            "speaker": 0,
+            "speaker": 2,
             "emotion": "neutral"
           },
           {
@@ -127,17 +128,17 @@
             "emotion": "neutral"
           },
           {
-            "text": "{플레이어}씨, 저는 로봇과 인간이 꼭 사이좋게 지낼 수 있을거라고 믿어요. 저와 다솜이의 관계가 평범해보이는 그런 세상이요..하하",
+            "text": "(플레이어)씨, 저는 로봇과 인간이 꼭 사이좋게 지낼 수 있을거라고 믿어요. 저와 다솜이의 관계가 평범해보이는 그런 세상이요..하하",
             "speaker": 0,
             "emotion": "delight"
           },
           {
-            "text": "1. (아무것도 하지않는다)",
+            "text": "선택지 1> (아무것도 하지않는다)",
             "speaker": 1,
             "emotion": "neutral"
           },
           {
-            "text": "2. (돈 만원을 주며) 이걸로 따님이랑 재밌게 노세요.",
+            "text": "선택지 2>(돈 만원을 주며) 이걸로 따님이랑 재밌게 노세요.",
             "speaker": 1,
             "emotion": "neutral"
           },
@@ -147,19 +148,14 @@
             "emotion": "neutral"
           },
           {
-            "text": "2-1. 네?! 괜찮아요.. 로봇 패스로도 충분히…",
+            "text": "네?! 괜찮아요.. 로봇 패스로도 충분히…",
             "speaker": 0,
             "emotion": "neutral"
           },
           {
             "text": "다녀왔습니다!",
-            "speaker": 0,
+            "speaker": 2,
             "emotion": "delight"
-          },
-          {
-            "text": "2-1-1. 아아… 정말 감사합니다..",
-            "speaker": 0,
-            "emotion": "neutral"
           },
           {
             "text": "혼자서도 잘 다녀왔구나.",
@@ -168,7 +164,7 @@
           },
           {
             "text": "아빠! 이번에는 놀이동산 가자!",
-            "speaker": 0,
+            "speaker": 2,
             "emotion": "delight"
           },
           {

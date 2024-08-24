@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de57a110a661caf40b55df38a897bd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playername: "\uD64D"
-  playersurname: "\uAE38\uB3D9"
+  playername: "\uAE38\uB3D9"
+  playersurname: "\uD64D"
   playeraltername: "\uD64D\uAE38\uB3D9"
 --- !u!1 &416080480
 GameObject:

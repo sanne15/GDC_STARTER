@@ -28,6 +28,7 @@ public class SentenceData
     public string text;
     public int speaker;  // 0: 상대방, 1: 플레이어
     public string emotion;
+    public string karma;
 }
 
 public class DialogueLoader : MonoBehaviour

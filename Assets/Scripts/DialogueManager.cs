@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public BallonManager ballonManager; // BallonManager 참조
     public ARPanelController arPanelController; // ARPanelController를 참조
     public AudioManager audioManager;
+    public KarmaManager karmaManager;
 
     public TextMeshProUGUI fastForwardText; // "빨리감기" 버튼의 TextMeshProUGUI 참조
     public TextMeshProUGUI LogText; // "대화로그" 버튼의 TextMeshProUGUI 참조
@@ -65,7 +66,8 @@ public class DialogueManager : MonoBehaviour
             { "성씨",  playersurname },
             { "이름", playername },
             { "가게이름", shopname },
-            { "br", "\n" }
+            { "br", "\n" },
+            { "인간친화도", karmaManager.humane_affinity.ToString() }
         };
 
         scrollRect.onValueChanged.AddListener(OnScrollValueChanged);
@@ -101,7 +103,7 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = dialogue.characterName;
         character_name_dialogue = nameText.text;
-        subcharacter_name_dialogue = dialogue.characterName;
+        subcharacter_name_dialogue = dialogue.subcharName;
         sentences.Clear();
 
         StartCoroutine(StartDialogueWithFadeIn(dialogue, onComplete)); // 대화 시작 시 말풍선 페이드 인
@@ -166,6 +168,7 @@ public class DialogueManager : MonoBehaviour
 
         if (sentences.Count == 0)
         {
+            ballonManager.textrefresh();
             StartCoroutine(FadeOutBubble());
             EndDialogue();
             dialogueText.text = "";

@@ -57,6 +57,7 @@ MonoBehaviour:
   - {fileID: 1701289173, guid: d6cc5f01fba9ff9479c1a2639eb30611, type: 3}
   footstepClip: {fileID: 8300000, guid: efbe342c5aa40644e9dba7521af65234, type: 3}
   audioSource: {fileID: 7246435856526504862}
+  hangeulname: "\uB0A8\uC720\uCC2C"
   emotionSpriteMappings:
   - emotion: 0
     spriteIndex: 0

@@ -1046,7 +1046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -276, y: -98}
+  m_AnchoredPosition: {x: -524.61, y: -88}
   m_SizeDelta: {x: 409.79, y: 45.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211039350
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2405,7 +2405,7 @@ CanvasGroup:
   m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
+  m_IgnoreParentGroups: 1
 --- !u!114 &567314795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3531,9 +3531,10 @@ MonoBehaviour:
   earningsPanel: {fileID: 567314792}
   earningsText: {fileID: 872642182}
   penaltyText: {fileID: 806436110}
+  DdayText: {fileID: 211039350}
   netEarningsText: {fileID: 1157143289}
   nextDayButton: {fileID: 854687736}
-  karmaManager: {fileID: 0}
+  karmaManager: {fileID: 2111307468}
 --- !u!4 &799528723
 Transform:
   m_ObjectHideFlags: 0
@@ -3583,8 +3584,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.588, y: 0.4}
-  m_SizeDelta: {x: 970.2, y: 86.97}
+  m_AnchoredPosition: {x: 0.000030518, y: 0.4}
+  m_SizeDelta: {x: 1459, y: 86.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &806436109
 CanvasRenderer:
@@ -4083,8 +4084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.588, y: 90.59}
-  m_SizeDelta: {x: 970.2, y: 93.41}
+  m_AnchoredPosition: {x: 0, y: 90.59}
+  m_SizeDelta: {x: 1459.02, y: 93.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &872642181
 CanvasRenderer:
@@ -6032,6 +6033,7 @@ MonoBehaviour:
   ballonManager: {fileID: 117994296}
   arPanelController: {fileID: 1801893208}
   audioManager: {fileID: 1694924422}
+  karmaManager: {fileID: 2111307468}
   fastForwardText: {fileID: 2024894913}
   LogText: {fileID: 1157878657}
   dialogueLogText: {fileID: 408814158}
@@ -10116,8 +10118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de57a110a661caf40b55df38a897bd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playername: "\uD64D"
-  playersurname: "\uAE38\uB3D9"
+  playername: "\uAE38\uB3D9"
+  playersurname: "\uD64D"
   playeraltername: "\uD64D\uAE38\uB3D9"
 --- !u!4 &1984743483
 Transform:

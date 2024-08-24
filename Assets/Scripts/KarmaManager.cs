@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class KarmaManager : MonoBehaviour
 {
-    public int humane_affinity { get; private set; }
+    public int humane_affinity { get; set; }
 
     void Awake()
     {
