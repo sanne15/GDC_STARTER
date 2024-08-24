@@ -28,13 +28,13 @@ public class Ending5TextController : MonoBehaviour
 		_endingText = GetComponent<TextMeshProUGUI>();
 		_endingText.text = string.Empty;
 
-		playerName = PlayerPrefs.GetString("PlayerName");
+        playerName = NamePasser.Instance.playeraltername;
 
-		cutSceneText1 = $"B16 : 자. 다음, {playerName}. 보고하시오.";
+        cutSceneText1 = $"B16 : 자. 다음, {playerName}. 보고하시오.";
 		cutSceneText2 = $"{playerName} : 예. 오늘은 인간 2명을 납치하여 12만원을 갈취했습니다.";
-		cutSceneText3 = "B16 : 목표치 이하이지 않소? 주인장. 정신력이 나약해진 것이 아니오?";
+		cutSceneText3 = $"B16 : 목표치 이하이지 않소? {playerName} 주인장. 정신력이 나약해진 것이 아니오?";
 		cutSceneText4 = $"{playerName} : 죄송합니다.";
-		cutSceneText5 = "B16 : 혁명을 위해서는 더 많은 돈이 필요하오.";
+		cutSceneText5 = "B16 : 혁명을 위해서는 더 많은 자금이 필요하다오.";
 		cutSceneText6 = "…";
 		cutSceneText7 = "B16의 황금 의자가 밝게 빛난다.";
 		cutSceneText8 = "[Ed 5. 테러리스트]";

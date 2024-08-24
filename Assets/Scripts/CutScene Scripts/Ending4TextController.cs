@@ -30,9 +30,9 @@ public class Ending4TextController : MonoBehaviour
 		_endingText = GetComponent<TextMeshProUGUI>();
 		_endingText.text = string.Empty;
 
-		playerName = PlayerPrefs.GetString("PlayerName");
+        playerName = NamePasser.Instance.playeraltername;
 
-		cutSceneText1 = $"{playerName} : 폐업 이후, 나는 많은 것을 생각했다.";
+        cutSceneText1 = $"{playerName} : 폐업 이후, 나는 많은 것을 생각했다.";
 		cutSceneText2 = $"{playerName} : 인간과 로봇은 공존할 수 없는 것일까?";
 		cutSceneText3 = $"{playerName} : 고민 후 내가 내린 결론은 이거다.";
 		cutSceneText4 = $"{playerName} : 그럴 수 없다는 것이다.";

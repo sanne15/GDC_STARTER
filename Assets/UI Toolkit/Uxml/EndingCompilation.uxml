@@ -7,7 +7,7 @@
         <ui:VisualElement name="EndingContainer" style="flex-grow: 1; flex-direction: row; justify-content: center; padding-right: 0; align-self: flex-end; padding-top: 5%; padding-bottom: 0; padding-left: 0; margin-right: 15%; height: 100%; align-items: stretch; margin-top: 0;">
             <ui:VisualElement name="Ending1" class="ending" style="width: 40%;">
                 <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton1" class="endingButton" style="background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END1.png?fileID=21300000&amp;guid=ae26538b402f7534b8217312e9ef263f&amp;type=3#END1&quot;); width: 90%; height: 65%;" />
-                <ui:Label tabindex="-1" text="END 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel1" class="endingLabel" style="width: 40%;" />
+                <ui:Label tabindex="-1" text="END 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel1" class="endingLabel" style="width: 40%; text-overflow: clip;" />
             </ui:VisualElement>
             <ui:VisualElement name="Ending2" class="ending" style="width: 40%;">
                 <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton2" class="endingButton" style="background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END2.png?fileID=21300000&amp;guid=c7cd35b47dd0cf5418ccb431320b6cf5&amp;type=3#END2&quot;); width: 90%; height: 65%;" />
@@ -26,7 +26,7 @@
                 <ui:Label tabindex="-1" text="END4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel4" class="endingLabel" style="width: 37%;" />
             </ui:VisualElement>
             <ui:VisualElement name="Ending5" class="ending">
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton5" class="endingButton" style="width: 85%; height: 65%; background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END5.png?fileID=2800000&amp;guid=dba0f2f1efadef74f9c329b711b77024&amp;type=3#END5&quot;);" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingButton5" class="endingButton" style="width: 85%; height: 65%; background-image: url(&quot;project://database/Assets/Images/Ending%20Images/END5.png?fileID=2800000&amp;guid=dba0f2f1efadef74f9c329b711b77024&amp;type=3#END5&quot;);" />
                 <ui:Label tabindex="-1" text="END 5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndingLabel5" class="endingLabel" style="width: 37%;" />
             </ui:VisualElement>
         </ui:VisualElement>

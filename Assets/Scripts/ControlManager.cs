@@ -8,11 +8,13 @@ public class ControlManager : MonoBehaviour
     public bool isLPressed { get; private set; }
     public bool isLogPanelVisible = false;
     public CanvasGroup LogPanel;
+    public GameObject LogPanel_go;
     private CustomerManager customerManager;
     public float fadeDuration = 0.3f;
 
     void Start()
     {
+        LogPanel_go.SetActive(true);
         // CustomerManager 참조 가져오기
         customerManager = FindObjectOfType<CustomerManager>();
         if (customerManager == null)
@@ -52,6 +54,8 @@ public class ControlManager : MonoBehaviour
 
     IEnumerator LogFadeIn()
     {
+        LogPanel_go.SetActive(true);
+        isLogPanelVisible = true;
         float elapsedTime = 0f;
         while (elapsedTime < fadeDuration)
         {
@@ -59,8 +63,7 @@ public class ControlManager : MonoBehaviour
             LogPanel.alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
             yield return null;
         }
-        LogPanel.alpha = 1f;
-        isLogPanelVisible = true;
+        LogPanel.alpha = 1f;               
     }
 
     IEnumerator LogFadeOut()
@@ -73,6 +76,7 @@ public class ControlManager : MonoBehaviour
             yield return null;
         }
         LogPanel.alpha = 0f;
+        LogPanel_go.SetActive(false);
         isLogPanelVisible = false;
     }
 }

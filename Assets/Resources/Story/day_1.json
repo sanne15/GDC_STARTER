@@ -130,6 +130,16 @@
                         "text": "농담도 참. 잘 들어가!",
                         "speaker": 1,
                         "emotion": "delight"
+                    },
+                    {
+                        "text": "앗, 참. 가게 앞에서 누가 이렇게 생긴 명함을 열심히 나누어 주더라고. 너도 받아.",
+                        "speaker": 0,
+                        "emotion": "frightened"
+                    },
+                    {
+                        "text": "빨리감기는 [Ctrl], 로그는 [L]...? 이게 무슨 의미지.",
+                        "speaker": 1,
+                        "emotion": "frightened"
                     }
                 ]
             }

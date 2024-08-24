@@ -103,7 +103,15 @@ public class CustomerManager : MonoBehaviour
 
         List<string> storyNPCNames = dialogueLoader.GetStoryNPCNames();
 
-        numberOfCustomers = Random.Range(5, 8);
+        if(FindObjectOfType<DayManager>().currentDay == 8)
+        {
+            numberOfCustomers = 2;
+        }
+        else
+        {
+            numberOfCustomers = Random.Range(4, 6);
+        }
+        
 
         foreach (string npcName in storyNPCNames)
         {
@@ -146,9 +154,26 @@ public class CustomerManager : MonoBehaviour
                 continue;
             }
             customer.dialogue = GenerateRandomDialogue();
-            customer.dialogue.characterName = customerPrefab.name;
+            customer.dialogue.characterName = customerPrefab.GetComponent<Customer>().hangeulname + "_랜덤방문";
 
             customers.Add(customer);
+        }
+
+        if (FindObjectOfType<DayManager>().currentDay != 8 && FindObjectOfType<DayManager>().currentDay != 1)
+        {
+            List<Customer> lister = new List<Customer>(customers);
+
+            // List의 요소들을 섞음
+            for (int i = lister.Count - 1; i > 0; i--)
+            {
+                int j = Random.Range(0, i + 1);
+                Customer temper = lister[i];
+                lister[i] = lister[j];
+                lister[j] = temper;
+            }
+
+            // 섞인 List를 Queue로 변환
+            customers = lister;
         }
 
         // Debug.Log(customers.Count);
@@ -170,15 +195,18 @@ public class CustomerManager : MonoBehaviour
 
         // 랜덤 대사 생성
         string[] possibleSentences = {
-            "오랜만이오 주인장.",
-            "오늘 장사는 어떤가?",
-            "라면 좀 주실 수 있소 주인장?",
-            "날씨가 좋구려.",
-            "오늘의 특선 메뉴 있소?",
-            "하하, 라면은 역시 짜고 매워야지 안그래?"
+            "오랜만이에요 (플레이어).",
+            "오늘 장사는 좀 잘 되어가나요?",
+            "라면 좀 주실 수 있나요, (이름)?",
+            "요새 날씨가 나쁘지 않네요.",
+            "요새 좀 습하지 않아요?",
+            "요새 가장 인기 있는 메뉴가 뭐에요?",
+            "하하, 라면은 역시 짜고 매워야죠.",
+            "듣기 싫은 말은 Shift + X로 스킵할 수 있다더군요.",
+            "이 집이 이 마을에서 라면을 가장 잘 끓이는 맛집이에요."
         };
 
-        int sentenceCount = Random.Range(3, 6); // 3~5개의 대사 생성
+        int sentenceCount = Random.Range(2, 4); // 3~5개의 대사 생성
         dialogue.sentences = new List<SentenceData>(); // 새로운 List<SentenceData>로 초기화
 
         for (int i = 0; i < sentenceCount; i++)

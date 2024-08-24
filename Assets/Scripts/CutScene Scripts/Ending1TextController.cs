@@ -27,9 +27,9 @@ public class Ending1TextController : MonoBehaviour
 		_endingText = GetComponent<TextMeshProUGUI>();
 		_endingText.text = string.Empty;
 
-		playerName = PlayerPrefs.GetString("PlayerName");
+        playerName = NamePasser.Instance.playeraltername;
 
-		cutSceneText1 = $"{playerName} : ….";
+        cutSceneText1 = $"{playerName} : ….";
 		cutSceneText2 = "이병도 : 여기까지 오느라 수고 많았소.";
 		cutSceneText3 = $"{playerName} : 아니오. 다 대표님 덕분 아니겠소.";
 		cutSceneText4 = "이병도 : 하하하. 고맙소. 자 그럼, 로봇이 없는 유토피아로 나아가봅세.";

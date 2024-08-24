@@ -60,6 +60,15 @@ public class OpeningManager : MonoBehaviour
 	{
 		StartCoroutine(StartOpening());
 	}
+
+	void Update()
+	{
+		if(Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
+		{
+            SceneManager.LoadScene("GameScene");
+        }
+	}
+
 	private IEnumerator StartOpening()
 	{
 		yield return StartCoroutine(DisplayCut1());
