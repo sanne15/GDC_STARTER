@@ -1,0 +1,96 @@
+{
+  "day": 8,
+  "storyNPCs": [
+    {
+      "name": "namyuchan",
+      "dialogue": {
+        "characterName": "남유찬",
+        "sentences": [
+          {
+            "text": "(플레이어)님, 데모 버전의 플레이는 어떠셨나요?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1주일 간의 플레이로는 대체 상락시가 뭐 하는 곳인지,",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "주인장은 왜 굳이 험악한 분위기에 상락시에 남아서\n라면을 끓이고 있는지 알기 힘들셨을 것입니다.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "게임의 엔딩까지 보여드리기에는 시간 관계상 어려움이 있지만,\n그럼에도 주인공의 선택이 지역 사회에 강한 영향을 줄 수 있다는 암시는 느끼셨을 것입니다.",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "앞으로의 주인공과 지역 주민들의, 평온한 상담소이자 휴식처였던 라면가게는 과연 어떻게 될까요.",
+            "speaker": 0,
+            "emotion": "frightened"
+          },
+          {
+            "text": "상황은 돌변하여 주민들이나 로봇 세력이 폭동을 일으키거나 대국적으로는 쿠데타가 발생할 수도 있겠죠.",
+            "speaker": 0, 
+            "emotion": "despair"
+          },
+          {
+            "text": "그 와중에 인덕이 있는 (플레이어)님에게 극단주의 세력이 접근할지도 모르는 일입니다.",
+            "speaker": 0, 
+            "emotion": "despair"
+          },
+          {
+            "text": "일자리를 잃어가는 사람들과 존중받고, 인권을 얻길 염원하는 로봇들. \n당신은 어느 쪽을 위로하고 감싸안으시겠습니까.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "한낱 소시민인 주인장 당신이, 급변하는 사회 속에서 목소리를 내는,",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그런 용기있는 행동을 자신있게 선택할 수 있을까요.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "앞으로 주인장의 행동에 따라 어떤 결말이 기다리고 있을 지, 엔딩 미리보기를 통해 확인해봅시다.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "데모 버전 시연에 참여해주신 당신은 \n 주인공의 업보 수치를 조종하여 엔딩을 바꿀 수 있습니다.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "지금까지 lastslicelab이었습니다. 감사합니다!!",
+            "speaker": 0,
+            "emotion": "delight"
+          }         
+        ]
+      }
+    },
+    {
+      "name": "F83",
+      "dialogue": {
+        "characterName": "F83",
+        "sentences": [
+          {
+            "text": "추신 : 완성된 로봇과 인간 사이의 이야기를 즐기고픈 분들은, \nitch.io 알림 설정으로 업데이트를 확인하실 수 있습니다.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "bit.ly/SliceLabs \n 팔로우 부탁드립니다!",
+            "speaker": 0,
+            "emotion": "delight"
+          }
+        ]
+      }
+    }
+  ]
+}

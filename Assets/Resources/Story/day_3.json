@@ -1,0 +1,266 @@
+{
+    "day": 1,
+    "storyNPCs": [
+        {
+            "name": "E11",
+            "dialogue": {
+                "characterName": "E11",
+                "sentences": [
+                    {
+                        "text": "안녕하세요. 주인 아저씨.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "로봇 손님. 라면은 입에 맞으신가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "네. 제가 먹어본 것중에서 제일 맛있네요. 주인 아저씨는 원래 뭐하시다가 라면 가게를 하신거에요?",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "원래부터 라면가게를 운영했어요. 조부모님때부터 내려온 가업이거든요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아. 그런가요? 좋겠네요. 꿈을 이루셨잖아요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아하하… 그렇죠. 지금이 참 행복해요. 떠나고 싶지 않네요. 손님은 원래 꿈이 뭐였나요?",
+                        "speaker": 1,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "야구선수요. 야구선수를 하고 싶었어요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "야구… 재밌는 스포츠죠",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 로봇규제조약으로 인해 못하게 되었지만요. 그때, 로봇대체산업으로 지정되지 못해서요.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "참 안타까운 이야기네요. 자신이 하고싶은걸 못하는 건 참 슬픈 일이죠.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "누구 잘못일까요. 실업대란이요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "75년에 있었던 큰 폭동 말씀하시는 거죠? 그때 무정부 사태 되고 한참 힘들었어서 기억나네요. 내막은 잘 모르겠지만요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "인간 입장도 이해는 돼요. 너무나 고등한 존재가 일자리 대부분을 앗아가면 저였어도 화났을 것 같아요. 그렇다고 정부가 붕괴되고, 그걸 로봇탓을 하다니. 너무한거 아니에요? 순전히 인간의 폭력성 때문이라고요. 제 주변 로봇들도 다 그렇게 생각해요.",
+                        "speaker": 0,
+                        "emotion": "angry"
+                    },
+                    {
+                        "text": "관점은 다 다르니까, 그럴 수 있다고 생각해요. 인간인 입장에서, 둘 다 너무 이해되서 항상 괴로운 주제네요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 미안해요. 주변 로봇들이 아저씨랑 대화하면 마음이 좀 편해진다고 한게 이해가 되네요. 로봇이랑 대화해주는 인간이여서 그런걸까요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "그럴지도 모르죠.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "암튼 고마워요! 좋은 밤 되세요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "잘 들어가세요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "choicheolmin",
+            "dialogue": {
+                "characterName": "최철민",
+                "sentences": [
+                    {
+                        "text": "주인장 라면 솜씨는 언제와도 항상 기가 막히네요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "손님. 감사합니다.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "주인장은 우울할 때 뭐해요?",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "뭐…보통은 게임이나, 책을 읽는 것 같네요. 요즘은 일때문에 우울할 시간도 없었네요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그게 오히려 좋은 걸까요? 우울할 시간도 없다는 것…",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "잘은 모르겠지만, 그렇지만은 않은 것 같아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "의외의 대답이네요..",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그런가요? 저는 감정을 느끼는 것이 특권이라고 생각해요. 우울이던, 기쁨이던…",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "주인장은 시간이 많아도 우울할 일은 없겠네요. 하하",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "말은 이렇게 해도 저도 우울할때는 저렇게 생각 못하죠.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 그런 모습이 더 매력적이네요. 친구가 추천한 이유가 있었어요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "실례지만, 주인장은 결혼 하셨나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "아.. 아뇨. 독신입니다.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "사실 짝사랑하는 사람이 있어요. 같은 회사 동료죠.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그렇군요. 그 분에게 고백했나요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하. 고백이라뇨. 좋아하면 안되는 사람이죠.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "그게 무슨… 회사 사장님인가요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "재밌으신 분이네요. 아니에요. 로봇이에요 로봇.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "오… 꽤나 흥미로운걸요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "그 정도 반응이면 나쁘지 않네요. 제 친구들한테 말하니까 미친놈 소리 들었는 걸요 하하.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "원래 사랑에는 장벽이 없는 거 잖아요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "에이. 그런 가식적인 말 하지 말아요. 현실적으로 불가능하잖아요? 그래서 그랬어요. 참 우울한 하루네요.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "어쩌다가 좋아하시게 된거에요?",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "지옥같은 직장 생활에서 저를 챙겨주는 유일한 사람이었어요. 아 로봇이죠. 아무것도 몰라서 항상 혼나기만 했던 저에게 친절하게 다가와 설명해준 로봇이였거든요.",
+                        "speaker": 0,
+                        "emotion": "sad"
+                    },
+                    {
+                        "text": "왜 사랑에 빠지셨는지 알겠네요",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "하하하. 고마워요. 저는 로봇이랑 사람의 경계가 뭔지 모르겠어요. 사람처럼 생각하고 사는 존재면 사람 아닌가요..",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "사람마다 생각이 많이 다른 것 같아요. 그래도 한가지 말씀드릴 수 있는 건 로봇과 인간의 연애가 말도 안되는 건 아니라고 생각한다는거죠.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "주인장. 장난치지말고 솔직하게 말해줘요.",
+                        "speaker": 0,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "손님. 저는 손님 이야기 가지고 장난 안쳐요. 자신이 하고싶은 것. 이루고 싶은 것을 못 이루는 것이 잘못인가요? 다른 사람에게 피해도 안주잖아요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    },
+                    {
+                        "text": "고마워요… 다음에 또 올께요.",
+                        "speaker": 0,
+                        "emotion": "delight"
+                    },
+                    {
+                        "text": "시간이 늦었네요. 조심히 들어가세요.",
+                        "speaker": 1,
+                        "emotion": "neutral"
+                    }
+                ]
+            }
+        }
+    ]
+}

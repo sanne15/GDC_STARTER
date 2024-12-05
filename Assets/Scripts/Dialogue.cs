@@ -7,7 +7,18 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     public string characterName;
+    public string subcharName;
+    public string altercharName;
 
-    [TextArea(3, 10)]
-    public string[] sentences;
+    public List<SentenceData> sentences;
+
+    void Awake()
+    {
+        subcharName = "¼­¿Õ¸ð";
+        altercharName = "Áø¹«";
+    }
+    void OnEnable()
+    {
+        sentences = new List<SentenceData>();
+    }
 }

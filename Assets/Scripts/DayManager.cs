@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -23,8 +24,11 @@ public class DayManager : MonoBehaviour
     public GameObject earningsPanel; // 정산 패널 UI
     public TMP_Text earningsText; // 수익 텍스트
     public TMP_Text penaltyText; // 벌금 텍스트
+    public TMP_Text DdayText; // 벌금 텍스트
     public TMP_Text netEarningsText; // 순수익 텍스트
     public Button nextDayButton; // Next Day 버튼
+
+    public KarmaManager karmaManager;
 
     private int originalFadePanelIndex;
     private int originalDayTextIndex;
@@ -35,6 +39,7 @@ public class DayManager : MonoBehaviour
 
     void Start()
     {
+        fadePanel.SetActive(false);
         UpdateDayText();
 
          moneyManager = FindObjectOfType<Moneymanager>();
@@ -61,6 +66,11 @@ public class DayManager : MonoBehaviour
     public void NextDay()
     {
         currentDay++;
+        if (currentDay >= 9)
+        {
+            SceneManager.LoadScene("EndingCompilation");
+        }
+        
         StartCoroutine(DayTransition());
         nextDayButtonClicked = false;
     }
@@ -77,6 +87,7 @@ public class DayManager : MonoBehaviour
 
     IEnumerator DayTransition()
     {
+        fadePanel.SetActive(true);
         // Fadeout
         yield return StartCoroutine(FadeOut());
 
@@ -120,27 +131,42 @@ public class DayManager : MonoBehaviour
         // Fadein
         yield return StartCoroutine(FadeIn());
 
+        currentState = GameState.Dialogue;
+        fadePanel.SetActive(false);
         StartDay();
     }
 
     void ShowEarningsPanel()
     {
+        int tempday = currentDay - 1;
+
         // 예시 UI 설정
         earningsPanel.SetActive(true);
         currentState = GameState.Settlement;
 
         // 손님 수 계산
         int customersToday = customerManager.GetCustomersToday();
-        int earnings = customersToday * 500;
-        int penalty = 0;  // 벌금 계산 로직이 필요함
-        int netEarnings = earnings - penalty;
+        int earnings = customersToday * 800;
+        int penalty = 27000 + 50000 * ((tempday-1) / 7);  // 벌금 계산 로직이 필요함
+        int netEarnings = earnings;
 
-        earningsText.text = $"Earnings: {earnings}₩";
-        penaltyText.text = $"Penalty: {penalty}₩";
-        netEarningsText.text = $"Net Earnings: {netEarnings}₩";
+        earningsText.text = $"오늘의 수익: 800 × {customersToday}명 = {earnings}₩";
+        penaltyText.text = $"이번주 벌금 (매주 징수): {penalty}₩";
+
+        if (tempday % 7 != 0)
+        {
+            DdayText.text = $"징수까지 앞으로 {7 - tempday % 7}일";
+        }
+        else // 징수일 (7, 14, 21일)
+        {
+            DdayText.text = $"징수 당일";
+        }
+
+        netEarningsText.text = $"총자산: {netEarnings + moneyManager.GetMoney() - ((tempday % 7 == 0) ? penalty : 0)}₩";
+
 
         // money Added
-        moneyManager.AddMoney(earnings);
+        moneyManager.AddMoney(netEarnings);
     }
 
     public void OnNextDayButtonClicked()

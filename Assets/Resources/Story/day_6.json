@@ -1,0 +1,266 @@
+{
+  "day": 6,
+  "storyNPCs": [
+    {
+      "name": "A12",
+      "dialogue": {
+        "characterName": "A12",
+        "sentences": [
+          {
+            "text": "(플레이어). 당신은 인간인데도, 상락시를 떠나지 않나요?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "손님이 오는 이상 이 자리에 항상 있을 예정입니다.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "(플레이어). 참 멋지네요. 어려움을 이겨내고 자신의 꿈을 지키고 있는거네요.",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "그렇게까지 멋지게 말해주시면 감사하죠.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "주인장은 프리다 칼로라고 아세요? 멕시코의 예술가요",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1. 아. 들어본 것 같아요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2. 아뇨 못들어봤어요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1-1 . 아시는군요. 저도 그분을 따라 예술을 하고싶어요.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2-1. 온갖 어려움을 이겨내고 예술의 길을 걸어가신 분이에요. 저는 그 분을 따라 예술을 하고싶어요.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그런데, 쉽지 않더라고요. 그림을 그려도 팔리지가 않더라고요. 가격때문이겠죠. 아무래도",
+            "speaker": 0,
+            "emotion": "sad"
+          },
+          {
+            "text": "가격이요? 제가 알기론 로봇은 돈을 가질 수 없을텐데…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "아 맞아요. 그게 문제에요. 예술품의 가격이 무료거든요.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "잘 이해가 안되네요…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "요즘 사람들은 예술품을 하나의 재산으로 소비해요. 음미하는 것이 아니라 보여주기 용도라는 거죠. 슬픈 현실이에요.",
+            "speaker": 0,
+            "emotion": "sad"
+          },
+          {
+            "text": "…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그래서 프리다 칼로가 더 대단해보이는 것 같아요. 저는 이 정도 고통으로도 이렇게 힘든데…",
+            "speaker": 0,
+            "emotion": "sad"
+          },
+          {
+            "text": "고통을 비교하는 건 의미 없어요. 당신이 느꼈을 때, 힘든거면 문제인거죠.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "하하하. 맞네요.(플레이어). 그래도 이겨내보고 싶어요.",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "하실 수 있으실거에요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "그건 그렇고, 주인장은 예술은 좀 좋아해요?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1. 좋아하죠",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2. 아뇨 딱히…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1-1. 정말요? 이 도시에 마음이 맞는 인간이 있을지는 몰랐네요. 가끔 와서 또 예술에 대해 이야기 해도 될까요?",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "2-1. 그런가요? 후후후 알겠어요. 제가 다음에 와서는 당신에게 예술의 매력을 알려드릴게요.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "좋습니다. 다음에 꼭 뵐 수 있었음 하네요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          }
+        ]
+      }
+    },
+    {
+      "name": "leesangyoon",
+      "dialogue": {
+        "characterName": "이상윤",
+        "sentences": [
+          {
+            "text": "(플레이어). 오랜만이야",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "할아버지, 오랜만이네요. 잘 지내셨어요?",
+            "speaker": 1,
+            "emotion": "delight"
+          },
+          {
+            "text": "뭐 매일 하던대로지. (플레이어)는?",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "저도 별 일 없어요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "하하하. 그거 참 다행이군. 오늘은 내가 술이 땡겨서 말이지..",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "네..? 무슨 일 있으셨어요?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "아니. 그건 아닌데, 옆집에서 막창을 받았거든. 막창을 먹고 나니까 술이 땡기더라고. 그래서 여기 왔지",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "한마디로… 2차인가요?",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "요즘 누가 2차라고 하나. 완전 (플레이어)도 늙은이구만.",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "아무튼 맞지.. 2차네. 2차!",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "할아버지.. 건강 챙기셔야죠….",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "어허. 자네 약주라는 말 못들어봤는가? 이정도로 먹으면 없던 병도 낫는다고.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "원래 약주라는 말은 청주에 귀한 약재를 넣어서 마시던거에서 나온거라고요..",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "흥, 유식한 척 하기는! 아무튼 몇 잔 안할테니 (플레이어)가 분위기에 맞춰서 한번 술 내와보게나.",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1. 소주를 내준다",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "2. 맥주를 내준다",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "3. 소맥을 내준다.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "1-1. 크.. 근본이지. 기분일세. 여기 팁이라네. ( + 5천원)",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "2-1. 맥주? 이거 참.. 술을 내놓으라니까 음료수를.. (아무 효과 X)",
+            "speaker": 0,
+            "emotion": "neutral"
+          },
+          {
+            "text": "3-1. 하하 (플레이어). 분위기를 맞출 줄 아는구만 ( + 1만원)",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "…",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "할아버지. 이제 슬슬 가게 마감할 시간이에요.",
+            "speaker": 1,
+            "emotion": "neutral"
+          },
+          {
+            "text": "응? 벌써 시간이 그렇게 됐는가. 아무튼 오랜만에 즐거웠네 (플레이어). 다음에 또 오겠네!",
+            "speaker": 0,
+            "emotion": "delight"
+          },
+          {
+            "text": "다음에 또 봬요.",
+            "speaker": 1,
+            "emotion": "delight"
+          }
+        ]
+      }
+    }
+  ]
+}
